@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import { ref } from 'vue'
-import QuestionComponent from '@/components/QuestionComponent.vue'
-import { useQuiz } from '@/composables/useQuiz'
-import type { QuizFilters } from '@/composables/useQuiz'
+import QuestionComponent from '@/components/QuestionComponent.vue';
+import type { QuizFilters } from '@/composables/useQuiz';
+import { useQuiz } from '@/composables/useQuiz';
+import { ref } from 'vue';
 
 const {
   currentQuestion,
@@ -17,17 +17,17 @@ const {
   startQuiz,
   selectAnswer,
   nextQuestion,
-} = useQuiz()
+} = useQuiz();
 
-const selectedDifficulties = ref<string[]>([])
-const selectedTypes = ref<string[]>([])
-const selectedForms = ref<string[]>([])
-const selectedCount = ref(10)
+const selectedDifficulties = ref<string[]>([]);
+const selectedTypes = ref<string[]>([]);
+const selectedForms = ref<string[]>([]);
+const selectedCount = ref(10);
 
 function toggle(arr: string[], value: string) {
-  const idx = arr.indexOf(value)
-  if (idx >= 0) arr.splice(idx, 1)
-  else arr.push(value)
+  const idx = arr.indexOf(value);
+  if (idx >= 0) arr.splice(idx, 1);
+  else arr.push(value);
 }
 
 function handleStart() {
@@ -36,27 +36,28 @@ function handleStart() {
     types: selectedTypes.value,
     forms: selectedForms.value,
     questionCount: selectedCount.value,
-  }
-  startQuiz(filters)
+  };
+  startQuiz(filters);
 }
 
 function handleRestart() {
-  selectedDifficulties.value = []
-  selectedTypes.value = []
-  selectedForms.value = []
-  selectedCount.value = 10
-  startQuiz()
+  selectedDifficulties.value = [];
+  selectedTypes.value = [];
+  selectedForms.value = [];
+  selectedCount.value = 10;
+  isPlaying.value = false;
+  isFinished.value = false;
 }
 
-const difficulties = ['easy', 'medium', 'hard']
-const types = ['regular', 'irregular']
+const difficulties = ['easy', 'medium', 'hard'];
+const types = ['regular', 'irregular'];
 const forms = [
   { value: 'past-simple', label: 'Past Simple' },
   { value: 'past-participle', label: 'Past Participle' },
-]
-const counts = [5, 10, 20, 0]
+];
+const counts = [5, 10, 20, 0];
 
-const countLabel = (c: number) => (c === 0 ? 'All' : String(c))
+const countLabel = (c: number) => (c === 0 ? 'All' : String(c));
 </script>
 
 <template>
@@ -137,8 +138,7 @@ const countLabel = (c: number) => (c === 0 ? 'All' : String(c))
         <div v-for="(item, i) in wrongAnswers" :key="i" class="review-card">
           <p class="review-question">
             <strong>{{ item.question.infinitive }}</strong>
-            ({{ item.question.translation }})
-            &mdash; {{ item.question.form }}
+            ({{ item.question.translation }}) &mdash; {{ item.question.form }}
           </p>
           <p class="review-answers">
             <span class="review-wrong">
