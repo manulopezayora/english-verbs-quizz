@@ -13,12 +13,19 @@ const shuffle = <T>(array: T[]): T[] => {
   return arr
 }
 
+export interface QuizFilters {
+  difficulties: string[]
+  types: string[]
+  forms: string[]
+}
+
 export const useQuiz = () => {
   const shuffled = ref<Question[]>([])
   const currentIndex = ref(0)
   const score = ref(0)
   const selectedAnswer = ref<number | null>(null)
   const isFinished = ref(false)
+  const isPlaying = ref(false)
 
   const currentQuestion = computed(() => shuffled.value[currentIndex.value] ?? null)
   const total = computed(() => shuffled.value.length)
@@ -26,12 +33,27 @@ export const useQuiz = () => {
     total.value > 0 ? ((currentIndex.value + 1) / total.value) * 100 : 0,
   )
 
-  const startQuiz = () => {
-    shuffled.value = shuffle(questions).slice(0, 10)
+  const startQuiz = (filters?: QuizFilters) => {
+    let filtered = questions
+
+    if (filters) {
+      if (filters.difficulties.length > 0) {
+        filtered = filtered.filter((filter) => filters.difficulties.includes(filter.difficulty))
+      }
+      if (filters.types.length > 0) {
+        filtered = filtered.filter((filter) => filters.types.includes(filter.type))
+      }
+      if (filters.forms.length > 0) {
+        filtered = filtered.filter((filter) => filters.forms.includes(filter.form))
+      }
+    }
+
+    shuffled.value = shuffle(filtered).slice(0, 10)
     currentIndex.value = 0
     score.value = 0
     selectedAnswer.value = null
     isFinished.value = false
+    isPlaying.value = true
   }
 
   const selectAnswer = (index: number) => {
@@ -59,6 +81,7 @@ export const useQuiz = () => {
     progress,
     selectedAnswer,
     isFinished,
+    isPlaying,
     startQuiz,
     selectAnswer,
     nextQuestion,

@@ -1,7 +1,8 @@
 <script setup lang="ts">
-import QuestionComponent from '@/components/QuestionComponent.vue';
-import { useQuiz } from '@/composables/useQuiz';
-import { onMounted } from 'vue';
+import { ref } from 'vue'
+import QuestionComponent from '@/components/QuestionComponent.vue'
+import { useQuiz } from '@/composables/useQuiz'
+import type { QuizFilters } from '@/composables/useQuiz'
 
 const {
   currentQuestion,
@@ -11,17 +12,97 @@ const {
   progress,
   selectedAnswer,
   isFinished,
+  isPlaying,
   startQuiz,
   selectAnswer,
   nextQuestion,
-} = useQuiz();
+} = useQuiz()
 
-onMounted(startQuiz);
+const selectedDifficulties = ref<string[]>([])
+const selectedTypes = ref<string[]>([])
+const selectedForms = ref<string[]>([])
+
+function toggle(arr: string[], value: string) {
+  const idx = arr.indexOf(value)
+  if (idx >= 0) arr.splice(idx, 1)
+  else arr.push(value)
+}
+
+function handleStart() {
+  const filters: QuizFilters = {
+    difficulties: selectedDifficulties.value,
+    types: selectedTypes.value,
+    forms: selectedForms.value,
+  }
+  startQuiz(filters)
+}
+
+function handleRestart() {
+  selectedDifficulties.value = []
+  selectedTypes.value = []
+  selectedForms.value = []
+  startQuiz()
+}
+
+const difficulties = ['easy', 'medium', 'hard']
+const types = ['regular', 'irregular']
+const forms = [
+  { value: 'past-simple', label: 'Past Simple' },
+  { value: 'past-participle', label: 'Past Participle' },
+]
 </script>
 
 <template>
   <div class="home">
     <h1>English Verbs Quiz</h1>
+
+    <div v-if="!isPlaying && !isFinished" class="filters">
+      <p class="filter-title">Select topics to practice:</p>
+
+      <div class="filter-group">
+        <p class="filter-label">Difficulty</p>
+        <div class="filter-options">
+          <button
+            v-for="d in difficulties"
+            :key="d"
+            :class="['filter-btn', { active: selectedDifficulties.includes(d) }]"
+            @click="toggle(selectedDifficulties, d)"
+          >
+            {{ d }}
+          </button>
+        </div>
+      </div>
+
+      <div class="filter-group">
+        <p class="filter-label">Verb Type</p>
+        <div class="filter-options">
+          <button
+            v-for="t in types"
+            :key="t"
+            :class="['filter-btn', { active: selectedTypes.includes(t) }]"
+            @click="toggle(selectedTypes, t)"
+          >
+            {{ t }}
+          </button>
+        </div>
+      </div>
+
+      <div class="filter-group">
+        <p class="filter-label">Form</p>
+        <div class="filter-options">
+          <button
+            v-for="f in forms"
+            :key="f.value"
+            :class="['filter-btn', { active: selectedForms.includes(f.value) }]"
+            @click="toggle(selectedForms, f.value)"
+          >
+            {{ f.label }}
+          </button>
+        </div>
+      </div>
+
+      <button class="start-btn" @click="handleStart">Start Quiz</button>
+    </div>
 
     <div v-if="isFinished" class="result">
       <h2>Quiz Complete!</h2>
@@ -29,10 +110,10 @@ onMounted(startQuiz);
         You scored <strong>{{ score }}</strong> out of <strong>{{ total }}</strong>
       </p>
       <p class="percentage">{{ Math.round((score / total) * 100) }}%</p>
-      <button class="restart-btn" @click="startQuiz">Try Again</button>
+      <button class="restart-btn" @click="handleRestart">Try Again</button>
     </div>
 
-    <template v-else-if="currentQuestion">
+    <template v-else-if="isPlaying && currentQuestion">
       <div class="progress-bar">
         <div class="progress-fill" :style="{ width: progress + '%' }"></div>
       </div>
@@ -62,6 +143,73 @@ onMounted(startQuiz);
 h1 {
   margin-bottom: 1.5rem;
   font-size: 1.5rem;
+}
+
+.filters {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.filter-title {
+  font-size: 1.1rem;
+  color: #444;
+}
+
+.filter-group {
+  text-align: left;
+}
+
+.filter-label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.filter-options {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  padding: 0.5rem 1rem;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  background: #fff;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+  text-transform: capitalize;
+}
+
+.filter-btn:hover {
+  border-color: #646cff;
+  background: #f0f0ff;
+}
+
+.filter-btn.active {
+  border-color: #646cff;
+  background: #646cff;
+  color: white;
+}
+
+.start-btn {
+  margin-top: 0.5rem;
+  padding: 0.75rem 2rem;
+  background: #22c55e;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.start-btn:hover {
+  background: #16a34a;
 }
 
 .progress-bar {
