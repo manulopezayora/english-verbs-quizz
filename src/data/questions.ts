@@ -18,7 +18,7 @@ export const questions: Question[] = [
     "type": "irregular",
     "form": "past-simple",
     "difficulty": "easy",
-    "options": ["went", "gone", "goed", "went"],
+    "options": ["went", "gone", "goed", "wented"],
     "correctAnswer": 0
   },
   {
@@ -78,7 +78,7 @@ export const questions: Question[] = [
     "type": "irregular",
     "form": "past-simple",
     "difficulty": "easy",
-    "options": ["wrote", "written", "writed", "wrote"],
+    "options": ["wrote", "written", "writed", "wrotes"],
     "correctAnswer": 0
   },
   {
@@ -88,7 +88,7 @@ export const questions: Question[] = [
     "type": "irregular",
     "form": "past-participle",
     "difficulty": "easy",
-    "options": ["written", "wrote", "writed", "wrote"],
+    "options": ["written", "wrote", "writed", "wroten"],
     "correctAnswer": 0
   },
   {
@@ -98,7 +98,7 @@ export const questions: Question[] = [
     "type": "irregular",
     "form": "past-simple",
     "difficulty": "easy",
-    "options": ["spoke", "spoken", "speaked", "spoke"],
+    "options": ["spoke", "spoken", "speaked", "spoked"],
     "correctAnswer": 0
   },
   {
@@ -138,7 +138,7 @@ export const questions: Question[] = [
     "type": "irregular",
     "form": "past-simple",
     "difficulty": "easy",
-    "options": ["broke", "broken", "breaked", "broke"],
+    "options": ["broke", "broken", "breaked", "broked"],
     "correctAnswer": 0
   },
   {
@@ -198,7 +198,7 @@ export const questions: Question[] = [
     "type": "irregular",
     "form": "past-simple",
     "difficulty": "easy",
-    "options": ["began", "begun", "beginned", "began"],
+    "options": ["began", "begun", "beginned", "beganen"],
     "correctAnswer": 0
   },
   {
@@ -218,7 +218,7 @@ export const questions: Question[] = [
     "type": "irregular",
     "form": "past-simple",
     "difficulty": "easy",
-    "options": ["drove", "driven", "drived", "drove"],
+    "options": ["drove", "driven", "drived", "droved"],
     "correctAnswer": 0
   },
   {
@@ -278,7 +278,7 @@ export const questions: Question[] = [
     "type": "irregular",
     "form": "past-simple",
     "difficulty": "easy",
-    "options": ["knew", "known", "knowed", "knew"],
+    "options": ["knew", "known", "knowed", "knewed"],
     "correctAnswer": 0
   },
   {
@@ -298,7 +298,7 @@ export const questions: Question[] = [
     "type": "irregular",
     "form": "past-simple",
     "difficulty": "easy",
-    "options": ["saw", "seen", "seed", "saw"],
+    "options": ["saw", "seen", "seed", "sawed"],
     "correctAnswer": 0
   },
   {
@@ -318,7 +318,7 @@ export const questions: Question[] = [
     "type": "irregular",
     "form": "past-simple",
     "difficulty": "easy",
-    "options": ["threw", "thrown", "throwed", "threw"],
+    "options": ["threw", "thrown", "throwed", "throw"],
     "correctAnswer": 0
   },
   {
@@ -328,7 +328,7 @@ export const questions: Question[] = [
     "type": "irregular",
     "form": "past-participle",
     "difficulty": "medium",
-    "options": ["thrown", "threw", "throwed", "thrown"],
+    "options": ["thrown", "threw", "throwed", "throwned"],
     "correctAnswer": 0
   },
   {
@@ -358,7 +358,7 @@ export const questions: Question[] = [
     "type": "irregular",
     "form": "past-simple",
     "difficulty": "medium",
-    "options": ["chose", "chosen", "choosed", "chose"],
+    "options": ["chose", "chosen", "choosed", "chozed"],
     "correctAnswer": 0
   },
   {
@@ -448,7 +448,7 @@ export const questions: Question[] = [
     "type": "irregular",
     "form": "past-participle",
     "difficulty": "medium",
-    "options": ["blown", "blew", "blowed", "blown"],
+    "options": ["blown", "blew", "blowed", "blowen"],
     "correctAnswer": 0
   },
   {
@@ -528,7 +528,7 @@ export const questions: Question[] = [
     "type": "irregular",
     "form": "past-participle",
     "difficulty": "hard",
-    "options": ["shaken", "shook", "shaked", "shaken"],
+    "options": ["shaken", "shook", "shaked", "shooken"],
     "correctAnswer": 0
   },
   {
@@ -598,7 +598,7 @@ export const questions: Question[] = [
     "type": "irregular",
     "form": "past-simple",
     "difficulty": "medium",
-    "options": ["rang", "rung", "ringed", "rang"],
+    "options": ["rang", "rung", "ringed", "ranged"],
     "correctAnswer": 0
   },
   {
@@ -688,7 +688,7 @@ export const questions: Question[] = [
     "type": "irregular",
     "form": "past-participle",
     "difficulty": "easy",
-    "options": ["bought", "buyed", "boughted", "bought"],
+    "options": ["bought", "buyed", "boughted", "boughten"],
     "correctAnswer": 0
   },
   {
@@ -728,7 +728,7 @@ export const questions: Question[] = [
     "type": "irregular",
     "form": "past-participle",
     "difficulty": "medium",
-    "options": ["thought", "thinked", "thunk", "thinked"],
+    "options": ["thought", "thinked", "thunk", "thoughted"],
     "correctAnswer": 0
   },
   {
@@ -738,7 +738,7 @@ export const questions: Question[] = [
     "type": "irregular",
     "form": "past-simple",
     "difficulty": "medium",
-    "options": ["taught", "teached", "tought", "teached"],
+    "options": ["taught", "teached", "tought", "taughted"],
     "correctAnswer": 0
   },
   {
@@ -758,7 +758,7 @@ export const questions: Question[] = [
     "type": "irregular",
     "form": "past-simple",
     "difficulty": "medium",
-    "options": ["caught", "catched", "cought", "catched"],
+    "options": ["caught", "catched", "cought", "caughted"],
     "correctAnswer": 0
   },
   {
@@ -778,7 +778,7 @@ export const questions: Question[] = [
     "type": "irregular",
     "form": "past-simple",
     "difficulty": "medium",
-    "options": ["fought", "fighted", "fighted", "foughted"],
+    "options": ["fought", "fighted", "fighty", "foughted"],
     "correctAnswer": 0
   },
   {
@@ -898,7 +898,7 @@ export const questions: Question[] = [
     "type": "irregular",
     "form": "past-simple",
     "difficulty": "easy",
-    "options": ["left", "leaved", "lefed", "leaved"],
+    "options": ["left", "leaved", "lefed", "leavened"],
     "correctAnswer": 0
   },
   {
@@ -908,7 +908,7 @@ export const questions: Question[] = [
     "type": "irregular",
     "form": "past-participle",
     "difficulty": "medium",
-    "options": ["left", "leaved", "leften", "leaved"],
+    "options": ["left", "leaved", "leften", "leavened"],
     "correctAnswer": 0
   },
   {
@@ -928,7 +928,7 @@ export const questions: Question[] = [
     "type": "irregular",
     "form": "past-participle",
     "difficulty": "hard",
-    "options": ["lent", "lended", "lenten", "lended"],
+    "options": ["lent", "lended", "lenten", "lentened"],
     "correctAnswer": 0
   },
   {
@@ -1008,7 +1008,7 @@ export const questions: Question[] = [
     "type": "irregular",
     "form": "past-participle",
     "difficulty": "medium",
-    "options": ["met", "meeted", "meten", "meeted"],
+    "options": ["met", "meeted", "meten", "meted"],
     "correctAnswer": 0
   },
   {
@@ -1028,7 +1028,7 @@ export const questions: Question[] = [
     "type": "irregular",
     "form": "past-participle",
     "difficulty": "medium",
-    "options": ["paid", "payed", "paiden", "payed"],
+    "options": ["paid", "payed", "paiden", "payeden"],
     "correctAnswer": 0
   },
   {
@@ -1078,7 +1078,7 @@ export const questions: Question[] = [
     "type": "irregular",
     "form": "past-simple",
     "difficulty": "easy",
-    "options": ["sold", "selled", "sold", "seld"],
+    "options": ["sold", "selled", "solded", "seld"],
     "correctAnswer": 0
   },
   {
@@ -1108,7 +1108,7 @@ export const questions: Question[] = [
     "type": "irregular",
     "form": "past-participle",
     "difficulty": "medium",
-    "options": ["sent", "sended", "senten", "sended"],
+    "options": ["sent", "sended", "senten", "sented"],
     "correctAnswer": 0
   },
   {
@@ -1168,7 +1168,7 @@ export const questions: Question[] = [
     "type": "irregular",
     "form": "past-participle",
     "difficulty": "medium",
-    "options": ["spent", "spended", "spenten", "spended"],
+    "options": ["spent", "spended", "spenten", "spented"],
     "correctAnswer": 0
   },
   {
@@ -1208,7 +1208,7 @@ export const questions: Question[] = [
     "type": "irregular",
     "form": "past-participle",
     "difficulty": "medium",
-    "options": ["told", "telled", "tolden", "telled"],
+    "options": ["told", "telled", "tolden", "tolded"],
     "correctAnswer": 0
   },
   {
@@ -1268,7 +1268,7 @@ export const questions: Question[] = [
     "type": "irregular",
     "form": "past-participle",
     "difficulty": "medium",
-    "options": ["felt", "feelled", "felten", "feelled"],
+    "options": ["felt", "feelled", "felten", "felted"],
     "correctAnswer": 0
   },
   {
@@ -1288,7 +1288,7 @@ export const questions: Question[] = [
     "type": "irregular",
     "form": "past-participle",
     "difficulty": "medium",
-    "options": ["heard", "heared", "hearden", "heared"],
+    "options": ["heard", "heared", "hearden", "hearded"],
     "correctAnswer": 0
   },
   {
@@ -1408,7 +1408,7 @@ export const questions: Question[] = [
     "type": "irregular",
     "form": "past-participle",
     "difficulty": "hard",
-    "options": ["hurt", "hurted", "hurten", "hurted"],
+    "options": ["hurt", "hurted", "hurten", "hurtened"],
     "correctAnswer": 0
   },
   {
@@ -1418,7 +1418,7 @@ export const questions: Question[] = [
     "type": "irregular",
     "form": "past-simple",
     "difficulty": "easy",
-    "options": ["let", "letted", "leted", "let"],
+    "options": ["let", "letted", "leted", "letten"],
     "correctAnswer": 0
   },
   {
@@ -1438,7 +1438,7 @@ export const questions: Question[] = [
     "type": "irregular",
     "form": "past-simple",
     "difficulty": "easy",
-    "options": ["cost", "costed", "costed", "costs"],
+    "options": ["cost", "costed", "costered", "costs"],
     "correctAnswer": 0
   },
   {
@@ -1448,7 +1448,7 @@ export const questions: Question[] = [
     "type": "irregular",
     "form": "past-participle",
     "difficulty": "medium",
-    "options": ["cost", "costed", "costen", "costed"],
+    "options": ["cost", "costed", "costen", "costered"],
     "correctAnswer": 0
   },
   {
@@ -1548,7 +1548,7 @@ export const questions: Question[] = [
     "type": "regular",
     "form": "past-simple",
     "difficulty": "easy",
-    "options": ["needed", "needed", "needen", "need"],
+    "options": ["needed", "neededed", "needen", "need"],
     "correctAnswer": 0
   },
   {
@@ -1868,7 +1868,7 @@ export const questions: Question[] = [
     "type": "regular",
     "form": "past-simple",
     "difficulty": "easy",
-    "options": ["used", "used", "usen", "useed"],
+    "options": ["used", "useded", "usen", "useed"],
     "correctAnswer": 0
   },
   {
@@ -1928,7 +1928,7 @@ export const questions: Question[] = [
     "type": "regular",
     "form": "past-participle",
     "difficulty": "medium",
-    "options": ["learned", "learnt", "learnen", "learned"],
+    "options": ["learned", "learnt", "learnen", "learneded"],
     "correctAnswer": 0
   },
   {
@@ -1958,7 +1958,7 @@ export const questions: Question[] = [
     "type": "regular",
     "form": "past-participle",
     "difficulty": "medium",
-    "options": ["enjoyed", "enjoyd", "enjoyen", "enjoyed"],
+    "options": ["enjoyed", "enjoyd", "enjoyen", "enjoyeded"],
     "correctAnswer": 0
   },
   {
@@ -2118,7 +2118,7 @@ export const questions: Question[] = [
     "type": "irregular",
     "form": "past-simple",
     "difficulty": "medium",
-    "options": ["dreamt", "dreamed", "dreamt", "dreamen"],
+    "options": ["dreamt", "dreamed", "dreamten", "dreamen"],
     "correctAnswer": 0
   },
   {
@@ -2138,7 +2138,7 @@ export const questions: Question[] = [
     "type": "irregular",
     "form": "past-simple",
     "difficulty": "medium",
-    "options": ["burnt", "burned", "burnt", "burnen"],
+    "options": ["burnt", "burned", "burnten", "burnen"],
     "correctAnswer": 0
   },
   {
@@ -2148,7 +2148,7 @@ export const questions: Question[] = [
     "type": "irregular",
     "form": "past-participle",
     "difficulty": "hard",
-    "options": ["burnt", "burned", "burnen", "burned"],
+    "options": ["burnt", "burned", "burnen", "burneded"],
     "correctAnswer": 0
   },
   {
@@ -2268,7 +2268,7 @@ export const questions: Question[] = [
     "type": "irregular",
     "form": "past-participle",
     "difficulty": "hard",
-    "options": ["shaven", "shaved", "shaven", "shaveed"],
+    "options": ["shaven", "shaved", "shavened", "shaveed"],
     "correctAnswer": 0
   },
   {
@@ -2278,7 +2278,7 @@ export const questions: Question[] = [
     "type": "irregular",
     "form": "past-simple",
     "difficulty": "easy",
-    "options": ["showed", "shown", "showed", "showed"],
+    "options": ["showed", "shown", "showeded", "showeden"],
     "correctAnswer": 0
   },
   {
@@ -2288,7 +2288,7 @@ export const questions: Question[] = [
     "type": "irregular",
     "form": "past-participle",
     "difficulty": "medium",
-    "options": ["shown", "showed", "showed", "showed"],
+    "options": ["shown", "showed", "showeded", "showeden"],
     "correctAnswer": 0
   },
   {
@@ -2338,7 +2338,7 @@ export const questions: Question[] = [
     "type": "irregular",
     "form": "past-simple",
     "difficulty": "medium",
-    "options": ["fed", "feed", "feed", "feded"],
+    "options": ["fed", "feed", "feeded", "feded"],
     "correctAnswer": 0
   },
   {
@@ -2348,7 +2348,7 @@ export const questions: Question[] = [
     "type": "irregular",
     "form": "past-participle",
     "difficulty": "hard",
-    "options": ["fed", "feed", "feden", "feed"],
+    "options": ["fed", "feed", "feden", "feeded"],
     "correctAnswer": 0
   },
   {
@@ -2358,7 +2358,7 @@ export const questions: Question[] = [
     "type": "irregular",
     "form": "past-simple",
     "difficulty": "hard",
-    "options": ["swung", "swang", "swinged", "swinged"],
+    "options": ["swung", "swang", "swinged", "swingened"],
     "correctAnswer": 0
   },
   {
@@ -2378,7 +2378,7 @@ export const questions: Question[] = [
     "type": "irregular",
     "form": "past-simple",
     "difficulty": "hard",
-    "options": ["stuck", "stack", "sticked", "sticked"],
+    "options": ["stuck", "stack", "sticked", "stucken"],
     "correctAnswer": 0
   },
   {
@@ -2468,7 +2468,7 @@ export const questions: Question[] = [
     "type": "irregular",
     "form": "past-participle",
     "difficulty": "hard",
-    "options": ["bent", "bended", "benten", "bended"],
+    "options": ["bent", "bended", "benten", "bented"],
     "correctAnswer": 0
   },
   {
