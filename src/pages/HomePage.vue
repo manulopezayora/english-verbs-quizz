@@ -13,6 +13,7 @@ const {
   selectedAnswer,
   isFinished,
   isPlaying,
+  wrongAnswers,
   startQuiz,
   selectAnswer,
   nextQuestion,
@@ -21,6 +22,7 @@ const {
 const selectedDifficulties = ref<string[]>([])
 const selectedTypes = ref<string[]>([])
 const selectedForms = ref<string[]>([])
+const selectedCount = ref(10)
 
 function toggle(arr: string[], value: string) {
   const idx = arr.indexOf(value)
@@ -33,6 +35,7 @@ function handleStart() {
     difficulties: selectedDifficulties.value,
     types: selectedTypes.value,
     forms: selectedForms.value,
+    questionCount: selectedCount.value,
   }
   startQuiz(filters)
 }
@@ -41,6 +44,7 @@ function handleRestart() {
   selectedDifficulties.value = []
   selectedTypes.value = []
   selectedForms.value = []
+  selectedCount.value = 10
   startQuiz()
 }
 
@@ -50,6 +54,9 @@ const forms = [
   { value: 'past-simple', label: 'Past Simple' },
   { value: 'past-participle', label: 'Past Participle' },
 ]
+const counts = [5, 10, 20, 0]
+
+const countLabel = (c: number) => (c === 0 ? 'All' : String(c))
 </script>
 
 <template>
@@ -101,6 +108,20 @@ const forms = [
         </div>
       </div>
 
+      <div class="filter-group">
+        <p class="filter-label">Questions</p>
+        <div class="filter-options">
+          <button
+            v-for="c in counts"
+            :key="c"
+            :class="['filter-btn', { active: selectedCount === c }]"
+            @click="selectedCount = c"
+          >
+            {{ countLabel(c) }}
+          </button>
+        </div>
+      </div>
+
       <button class="start-btn" @click="handleStart">Start Quiz</button>
     </div>
 
@@ -110,6 +131,28 @@ const forms = [
         You scored <strong>{{ score }}</strong> out of <strong>{{ total }}</strong>
       </p>
       <p class="percentage">{{ Math.round((score / total) * 100) }}%</p>
+
+      <div v-if="wrongAnswers.length > 0" class="review">
+        <h3>Review your mistakes ({{ wrongAnswers.length }})</h3>
+        <div v-for="(item, i) in wrongAnswers" :key="i" class="review-card">
+          <p class="review-question">
+            <strong>{{ item.question.infinitive }}</strong>
+            ({{ item.question.translation }})
+            &mdash; {{ item.question.form }}
+          </p>
+          <p class="review-answers">
+            <span class="review-wrong">
+              Your answer: {{ item.question.options[item.selectedIndex] }}
+            </span>
+            <span class="review-correct">
+              Correct: {{ item.question.options[item.question.correctAnswer] }}
+            </span>
+          </p>
+        </div>
+      </div>
+
+      <p v-else class="perfect">Perfect score! No mistakes.</p>
+
       <button class="restart-btn" @click="handleRestart">Try Again</button>
     </div>
 
@@ -262,6 +305,53 @@ h1 {
   font-size: 3rem;
   font-weight: bold;
   color: #646cff;
+  margin-bottom: 1.5rem;
+}
+
+.review {
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+.review h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+  text-align: center;
+}
+
+.review-card {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.review-question {
+  font-size: 0.95rem;
+  margin-bottom: 0.25rem;
+  text-transform: capitalize;
+}
+
+.review-answers {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 0.85rem;
+}
+
+.review-wrong {
+  color: #dc2626;
+}
+
+.review-correct {
+  color: #16a34a;
+  font-weight: 600;
+}
+
+.perfect {
+  font-size: 1.1rem;
+  color: #16a34a;
   margin-bottom: 1.5rem;
 }
 
