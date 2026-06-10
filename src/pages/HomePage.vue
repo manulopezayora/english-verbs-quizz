@@ -24,13 +24,13 @@ const selectedTypes = ref<string[]>([]);
 const selectedForms = ref<string[]>([]);
 const selectedCount = ref(10);
 
-function toggle(arr: string[], value: string) {
+const toggle = (arr: string[], value: string) => {
   const idx = arr.indexOf(value);
   if (idx >= 0) arr.splice(idx, 1);
   else arr.push(value);
-}
+};
 
-function handleStart() {
+const handleStart = () => {
   const filters: QuizFilters = {
     difficulties: selectedDifficulties.value,
     types: selectedTypes.value,
@@ -38,16 +38,16 @@ function handleStart() {
     questionCount: selectedCount.value,
   };
   startQuiz(filters);
-}
+};
 
-function handleRestart() {
+const handleRestart = () => {
   selectedDifficulties.value = [];
   selectedTypes.value = [];
   selectedForms.value = [];
   selectedCount.value = 10;
   isPlaying.value = false;
   isFinished.value = false;
-}
+};
 
 const difficulties = ['easy', 'medium', 'hard'];
 const types = ['regular', 'irregular'];
@@ -57,7 +57,7 @@ const forms = [
 ];
 const counts = [5, 10, 20, 0];
 
-const countLabel = (c: number) => (c === 0 ? 'All' : String(c));
+const countLabel = (count: number) => (count === 0 ? 'All' : String(count));
 </script>
 
 <template>
@@ -71,12 +71,12 @@ const countLabel = (c: number) => (c === 0 ? 'All' : String(c));
         <p class="filter-label">Difficulty</p>
         <div class="filter-options">
           <button
-            v-for="d in difficulties"
-            :key="d"
-            :class="['filter-btn', { active: selectedDifficulties.includes(d) }]"
-            @click="toggle(selectedDifficulties, d)"
+            v-for="difficult in difficulties"
+            :key="difficult"
+            :class="['filter-btn', { active: selectedDifficulties.includes(difficult) }]"
+            @click="toggle(selectedDifficulties, difficult)"
           >
-            {{ d }}
+            {{ difficult }}
           </button>
         </div>
       </div>
@@ -85,12 +85,12 @@ const countLabel = (c: number) => (c === 0 ? 'All' : String(c));
         <p class="filter-label">Verb Type</p>
         <div class="filter-options">
           <button
-            v-for="t in types"
-            :key="t"
-            :class="['filter-btn', { active: selectedTypes.includes(t) }]"
-            @click="toggle(selectedTypes, t)"
+            v-for="type in types"
+            :key="type"
+            :class="['filter-btn', { active: selectedTypes.includes(type) }]"
+            @click="toggle(selectedTypes, type)"
           >
-            {{ t }}
+            {{ type }}
           </button>
         </div>
       </div>
@@ -99,12 +99,12 @@ const countLabel = (c: number) => (c === 0 ? 'All' : String(c));
         <p class="filter-label">Form</p>
         <div class="filter-options">
           <button
-            v-for="f in forms"
-            :key="f.value"
-            :class="['filter-btn', { active: selectedForms.includes(f.value) }]"
-            @click="toggle(selectedForms, f.value)"
+            v-for="form in forms"
+            :key="form.value"
+            :class="['filter-btn', { active: selectedForms.includes(form.value) }]"
+            @click="toggle(selectedForms, form.value)"
           >
-            {{ f.label }}
+            {{ form.label }}
           </button>
         </div>
       </div>
@@ -113,12 +113,12 @@ const countLabel = (c: number) => (c === 0 ? 'All' : String(c));
         <p class="filter-label">Questions</p>
         <div class="filter-options">
           <button
-            v-for="c in counts"
-            :key="c"
-            :class="['filter-btn', { active: selectedCount === c }]"
-            @click="selectedCount = c"
+            v-for="count in counts"
+            :key="count"
+            :class="['filter-btn', { active: selectedCount === count }]"
+            @click="selectedCount = count"
           >
-            {{ countLabel(c) }}
+            {{ countLabel(count) }}
           </button>
         </div>
       </div>
