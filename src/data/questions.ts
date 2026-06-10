@@ -1,4 +1,6 @@
-[
+import type { Question } from '@/interfaces/Question.interface';
+
+export const questions: Question[] = [
   {
     "id": 1,
     "infinitive": "be",
