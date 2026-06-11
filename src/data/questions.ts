@@ -2,3753 +2,2503 @@ import type { Question } from '@/interfaces/Question.interface';
 
 export const questions: Question[] = [
   {
-    "id": 1,
-    "infinitive": "be",
-    "translation": "ser / estar",
-    "type": "irregular",
-    "form": "past-participle",
-    "difficulty": "easy",
-    "options": [
-      "was/were",
-      "being",
-      "been",
-      "beed"
-    ],
-    "correctAnswer": 2
-  },
-  {
-    "id": 2,
-    "infinitive": "go",
-    "translation": "ir",
-    "type": "irregular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "goed",
-      "went",
-      "wented",
-      "gone"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "id": 3,
-    "infinitive": "go",
-    "translation": "ir",
-    "type": "irregular",
-    "form": "past-participle",
-    "difficulty": "easy",
-    "options": [
-      "goed",
-      "went",
-      "gone",
-      "going"
-    ],
-    "correctAnswer": 2
-  },
-  {
-    "id": 4,
-    "infinitive": "eat",
-    "translation": "comer",
-    "type": "irregular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "eaten",
-      "ate",
-      "eated",
-      "et"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "id": 5,
-    "infinitive": "eat",
-    "translation": "comer",
-    "type": "irregular",
-    "form": "past-participle",
-    "difficulty": "easy",
-    "options": [
-      "eaten",
-      "ating",
-      "eated",
-      "ate"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 6,
-    "infinitive": "drink",
-    "translation": "beber",
-    "type": "irregular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "drink",
-      "drinked",
-      "drunk",
-      "drank"
-    ],
-    "correctAnswer": 3
-  },
-  {
-    "id": 7,
-    "infinitive": "drink",
-    "translation": "beber",
-    "type": "irregular",
-    "form": "past-participle",
-    "difficulty": "easy",
-    "options": [
-      "drank",
-      "drunk",
-      "drinken",
-      "drinked"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "id": 8,
-    "infinitive": "write",
-    "translation": "escribir",
-    "type": "irregular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "wrotes",
-      "writed",
-      "written",
-      "wrote"
-    ],
-    "correctAnswer": 3
-  },
-  {
-    "id": 9,
-    "infinitive": "write",
-    "translation": "escribir",
-    "type": "irregular",
-    "form": "past-participle",
-    "difficulty": "easy",
-    "options": [
-      "writed",
-      "written",
-      "wrote",
-      "wroten"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "id": 10,
-    "infinitive": "speak",
-    "translation": "hablar",
-    "type": "irregular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "spoken",
-      "spoked",
-      "speaked",
-      "spoke"
-    ],
-    "correctAnswer": 3
-  },
-  {
-    "id": 11,
-    "infinitive": "speak",
-    "translation": "hablar",
-    "type": "irregular",
-    "form": "past-participle",
-    "difficulty": "easy",
-    "options": [
-      "spoke",
-      "speaked",
-      "spoken",
-      "spoked"
-    ],
-    "correctAnswer": 2
-  },
-  {
-    "id": 12,
-    "infinitive": "take",
-    "translation": "tomar",
-    "type": "irregular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "toke",
-      "taked",
-      "taken",
-      "took"
-    ],
-    "correctAnswer": 3
-  },
-  {
-    "id": 13,
-    "infinitive": "take",
-    "translation": "tomar",
-    "type": "irregular",
-    "form": "past-participle",
-    "difficulty": "easy",
-    "options": [
-      "took",
-      "toke",
-      "taken",
-      "taked"
-    ],
-    "correctAnswer": 2
-  },
-  {
-    "id": 14,
-    "infinitive": "break",
-    "translation": "romper",
-    "type": "irregular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "broke",
-      "broken",
-      "breaked",
-      "broked"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 15,
-    "infinitive": "break",
-    "translation": "romper",
-    "type": "irregular",
-    "form": "past-participle",
-    "difficulty": "easy",
-    "options": [
-      "broked",
-      "breaked",
-      "broken",
-      "broke"
-    ],
-    "correctAnswer": 2
-  },
-  {
-    "id": 16,
-    "infinitive": "swim",
-    "translation": "nadar",
-    "type": "irregular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "swum",
-      "swimmed",
-      "swim",
-      "swam"
-    ],
-    "correctAnswer": 3
-  },
-  {
-    "id": 17,
-    "infinitive": "swim",
-    "translation": "nadar",
-    "type": "irregular",
-    "form": "past-participle",
-    "difficulty": "medium",
-    "options": [
-      "swimmed",
-      "swimen",
-      "swum",
-      "swam"
-    ],
-    "correctAnswer": 2
-  },
-  {
-    "id": 18,
-    "infinitive": "sing",
-    "translation": "cantar",
-    "type": "irregular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "sung",
-      "sang",
-      "singed",
-      "sing"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "id": 19,
-    "infinitive": "sing",
-    "translation": "cantar",
-    "type": "irregular",
-    "form": "past-participle",
-    "difficulty": "medium",
-    "options": [
-      "sung",
-      "singed",
-      "sang",
-      "sungen"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 20,
-    "infinitive": "begin",
-    "translation": "empezar",
-    "type": "irregular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "began",
-      "begun",
-      "beganen",
-      "beginned"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 21,
-    "infinitive": "begin",
-    "translation": "empezar",
-    "type": "irregular",
-    "form": "past-participle",
-    "difficulty": "medium",
-    "options": [
-      "beginned",
-      "began",
-      "begunnen",
-      "begun"
-    ],
-    "correctAnswer": 3
-  },
-  {
-    "id": 22,
-    "infinitive": "drive",
-    "translation": "conducir",
-    "type": "irregular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "droved",
-      "driven",
-      "drove",
-      "drived"
-    ],
-    "correctAnswer": 2
-  },
-  {
-    "id": 23,
-    "infinitive": "drive",
-    "translation": "conducir",
-    "type": "irregular",
-    "form": "past-participle",
-    "difficulty": "medium",
-    "options": [
-      "drived",
-      "driven",
-      "dreven",
-      "drove"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "id": 24,
-    "infinitive": "fly",
-    "translation": "volar",
-    "type": "irregular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "flown",
-      "flow",
-      "flied",
-      "flew"
-    ],
-    "correctAnswer": 3
-  },
-  {
-    "id": 25,
-    "infinitive": "fly",
-    "translation": "volar",
-    "type": "irregular",
-    "form": "past-participle",
-    "difficulty": "medium",
-    "options": [
-      "flowed",
-      "flown",
-      "flew",
-      "flied"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "id": 26,
-    "infinitive": "give",
-    "translation": "dar",
-    "type": "irregular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "gived",
-      "gaven",
-      "given",
-      "gave"
-    ],
-    "correctAnswer": 3
-  },
-  {
-    "id": 27,
-    "infinitive": "give",
-    "translation": "dar",
-    "type": "irregular",
-    "form": "past-participle",
-    "difficulty": "easy",
-    "options": [
-      "given",
-      "gived",
-      "gaven",
-      "gave"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 28,
-    "infinitive": "know",
-    "translation": "saber / conocer",
-    "type": "irregular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "knowed",
-      "knewed",
-      "known",
-      "knew"
-    ],
-    "correctAnswer": 3
-  },
-  {
-    "id": 29,
-    "infinitive": "know",
-    "translation": "saber / conocer",
-    "type": "irregular",
-    "form": "past-participle",
-    "difficulty": "easy",
-    "options": [
-      "knew",
-      "known",
-      "knowen",
-      "knowed"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "id": 30,
-    "infinitive": "see",
-    "translation": "ver",
-    "type": "irregular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "saw",
-      "sawed",
-      "seed",
-      "seen"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 31,
-    "infinitive": "see",
-    "translation": "ver",
-    "type": "irregular",
-    "form": "past-participle",
-    "difficulty": "easy",
-    "options": [
-      "seen",
-      "saw",
-      "seeing",
-      "seed"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 32,
-    "infinitive": "throw",
-    "translation": "lanzar",
-    "type": "irregular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "throw",
-      "throwed",
-      "thrown",
-      "threw"
-    ],
-    "correctAnswer": 3
-  },
-  {
-    "id": 33,
-    "infinitive": "throw",
-    "translation": "lanzar",
-    "type": "irregular",
-    "form": "past-participle",
-    "difficulty": "medium",
-    "options": [
-      "throwned",
-      "throwed",
-      "thrown",
-      "threw"
-    ],
-    "correctAnswer": 2
-  },
-  {
-    "id": 34,
-    "infinitive": "wear",
-    "translation": "usar / llevar puesto",
-    "type": "irregular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "wore",
-      "worn",
-      "weared",
-      "ware"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 35,
-    "infinitive": "wear",
-    "translation": "usar / llevar puesto",
-    "type": "irregular",
-    "form": "past-participle",
-    "difficulty": "medium",
-    "options": [
-      "weared",
-      "woren",
-      "wore",
-      "worn"
-    ],
-    "correctAnswer": 3
-  },
-  {
-    "id": 36,
-    "infinitive": "choose",
-    "translation": "elegir",
-    "type": "irregular",
-    "form": "past-simple",
-    "difficulty": "medium",
-    "options": [
-      "chozed",
-      "chosen",
-      "chose",
-      "choosed"
-    ],
-    "correctAnswer": 2
-  },
-  {
-    "id": 37,
-    "infinitive": "choose",
-    "translation": "elegir",
-    "type": "irregular",
-    "form": "past-participle",
-    "difficulty": "medium",
-    "options": [
-      "chosen",
-      "cheesen",
-      "choosed",
-      "chose"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 38,
-    "infinitive": "freeze",
-    "translation": "congelar",
-    "type": "irregular",
-    "form": "past-simple",
-    "difficulty": "medium",
-    "options": [
-      "frozed",
-      "froze",
-      "frozen",
-      "freezed"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "id": 39,
-    "infinitive": "freeze",
-    "translation": "congelar",
-    "type": "irregular",
-    "form": "past-participle",
-    "difficulty": "medium",
-    "options": [
-      "froze",
-      "frozed",
-      "frozen",
-      "freezed"
-    ],
-    "correctAnswer": 2
-  },
-  {
-    "id": 40,
-    "infinitive": "hide",
-    "translation": "esconder",
-    "type": "irregular",
-    "form": "past-simple",
-    "difficulty": "medium",
-    "options": [
-      "hidden",
-      "hided",
-      "hiden",
-      "hid"
-    ],
-    "correctAnswer": 3
-  },
-  {
-    "id": 41,
-    "infinitive": "hide",
-    "translation": "esconder",
-    "type": "irregular",
-    "form": "past-participle",
-    "difficulty": "medium",
-    "options": [
-      "hid",
-      "hidden",
-      "hiden",
-      "hided"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "id": 42,
-    "infinitive": "bite",
-    "translation": "morder",
-    "type": "irregular",
-    "form": "past-simple",
-    "difficulty": "medium",
-    "options": [
-      "bitten",
-      "bite",
-      "bit",
-      "bited"
-    ],
-    "correctAnswer": 2
-  },
-  {
-    "id": 43,
-    "infinitive": "bite",
-    "translation": "morder",
-    "type": "irregular",
-    "form": "past-participle",
-    "difficulty": "hard",
-    "options": [
-      "bote",
-      "bited",
-      "bitten",
-      "bit"
-    ],
-    "correctAnswer": 2
-  },
-  {
-    "id": 44,
-    "infinitive": "blow",
-    "translation": "soplar",
-    "type": "irregular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "blew",
-      "blowed",
-      "blewn",
-      "blown"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 45,
-    "infinitive": "blow",
-    "translation": "soplar",
-    "type": "irregular",
-    "form": "past-participle",
-    "difficulty": "medium",
-    "options": [
-      "blowed",
-      "blew",
-      "blowen",
-      "blown"
-    ],
-    "correctAnswer": 3
-  },
-  {
-    "id": 46,
-    "infinitive": "draw",
-    "translation": "dibujar",
-    "type": "irregular",
-    "form": "past-simple",
-    "difficulty": "medium",
-    "options": [
-      "drew",
-      "drawn",
-      "drawed",
-      "drown"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 47,
-    "infinitive": "draw",
-    "translation": "dibujar",
-    "type": "irregular",
-    "form": "past-participle",
-    "difficulty": "medium",
-    "options": [
-      "drawn",
-      "drown",
-      "drawed",
-      "drew"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 48,
-    "infinitive": "grow",
-    "translation": "crecer",
-    "type": "irregular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "growed",
-      "grew",
-      "grewed",
-      "grown"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "id": 49,
-    "infinitive": "grow",
-    "translation": "crecer",
-    "type": "irregular",
-    "form": "past-participle",
-    "difficulty": "medium",
-    "options": [
-      "grown",
-      "grew",
-      "growen",
-      "growed"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 50,
-    "infinitive": "rise",
-    "translation": "elevarse",
-    "type": "irregular",
-    "form": "past-simple",
-    "difficulty": "medium",
-    "options": [
-      "rose",
-      "risen",
-      "rised",
-      "roze"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 51,
-    "infinitive": "rise",
-    "translation": "elevarse",
-    "type": "irregular",
-    "form": "past-participle",
-    "difficulty": "hard",
-    "options": [
-      "risen",
-      "rised",
-      "rose",
-      "rozed"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 52,
-    "infinitive": "shake",
-    "translation": "agitar",
-    "type": "irregular",
-    "form": "past-simple",
-    "difficulty": "medium",
-    "options": [
-      "shook",
-      "shooken",
-      "shaked",
-      "shaken"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 53,
-    "infinitive": "shake",
-    "translation": "agitar",
-    "type": "irregular",
-    "form": "past-participle",
-    "difficulty": "hard",
-    "options": [
-      "shaken",
-      "shook",
-      "shaked",
-      "shooken"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 54,
-    "infinitive": "steal",
-    "translation": "robar",
-    "type": "irregular",
-    "form": "past-simple",
-    "difficulty": "medium",
-    "options": [
-      "stoled",
-      "stealed",
-      "stole",
-      "stolen"
-    ],
-    "correctAnswer": 2
-  },
-  {
-    "id": 55,
-    "infinitive": "steal",
-    "translation": "robar",
-    "type": "irregular",
-    "form": "past-participle",
-    "difficulty": "medium",
-    "options": [
-      "stole",
-      "stealed",
-      "stoled",
-      "stolen"
-    ],
-    "correctAnswer": 3
-  },
-  {
-    "id": 56,
-    "infinitive": "tear",
-    "translation": "rasgar",
-    "type": "irregular",
-    "form": "past-simple",
-    "difficulty": "hard",
-    "options": [
-      "teared",
-      "tore",
-      "tared",
-      "torn"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "id": 57,
-    "infinitive": "tear",
-    "translation": "rasgar",
-    "type": "irregular",
-    "form": "past-participle",
-    "difficulty": "hard",
-    "options": [
-      "torn",
-      "teared",
-      "tore",
-      "toren"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 58,
-    "infinitive": "wake",
-    "translation": "despertar",
-    "type": "irregular",
-    "form": "past-simple",
-    "difficulty": "medium",
-    "options": [
-      "woked",
-      "woken",
-      "woke",
-      "waked"
-    ],
-    "correctAnswer": 2
-  },
-  {
-    "id": 59,
-    "infinitive": "wake",
-    "translation": "despertar",
-    "type": "irregular",
-    "form": "past-participle",
-    "difficulty": "hard",
-    "options": [
-      "woken",
-      "woke",
-      "waked",
-      "wokened"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 60,
-    "infinitive": "ring",
-    "translation": "sonar (timbre)",
-    "type": "irregular",
-    "form": "past-simple",
-    "difficulty": "medium",
-    "options": [
-      "ringed",
-      "rung",
-      "ranged",
-      "rang"
-    ],
-    "correctAnswer": 3
-  },
-  {
-    "id": 61,
-    "infinitive": "ring",
-    "translation": "sonar (timbre)",
-    "type": "irregular",
-    "form": "past-participle",
-    "difficulty": "hard",
-    "options": [
-      "rung",
-      "rang",
-      "rungen",
-      "ringed"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 62,
-    "infinitive": "run",
-    "translation": "correr",
-    "type": "irregular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "runned",
-      "ranned",
-      "run",
-      "ran"
-    ],
-    "correctAnswer": 3
-  },
-  {
-    "id": 63,
-    "infinitive": "run",
-    "translation": "correr",
-    "type": "irregular",
-    "form": "past-participle",
-    "difficulty": "medium",
-    "options": [
-      "ranned",
-      "run",
-      "runned",
-      "ran"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "id": 64,
-    "infinitive": "come",
-    "translation": "venir",
-    "type": "irregular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "come",
-      "came",
-      "comed",
-      "camed"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "id": 65,
-    "infinitive": "come",
-    "translation": "venir",
-    "type": "irregular",
-    "form": "past-participle",
-    "difficulty": "medium",
-    "options": [
-      "comed",
-      "came",
-      "comen",
-      "come"
-    ],
-    "correctAnswer": 3
-  },
-  {
-    "id": 66,
-    "infinitive": "become",
-    "translation": "convertirse en",
-    "type": "irregular",
-    "form": "past-simple",
-    "difficulty": "medium",
-    "options": [
-      "becamed",
-      "becomed",
-      "became",
-      "become"
-    ],
-    "correctAnswer": 2
-  },
-  {
-    "id": 67,
-    "infinitive": "become",
-    "translation": "convertirse en",
-    "type": "irregular",
-    "form": "past-participle",
-    "difficulty": "medium",
-    "options": [
-      "becamen",
-      "become",
-      "becomed",
-      "became"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "id": 68,
-    "infinitive": "buy",
-    "translation": "comprar",
-    "type": "irregular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "bought",
-      "boughted",
-      "buy",
-      "buyed"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 69,
-    "infinitive": "buy",
-    "translation": "comprar",
-    "type": "irregular",
-    "form": "past-participle",
-    "difficulty": "easy",
-    "options": [
-      "boughten",
-      "bought",
-      "boughted",
-      "buyed"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "id": 70,
-    "infinitive": "bring",
-    "translation": "traer",
-    "type": "irregular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "broughted",
-      "bringed",
-      "brang",
-      "brought"
-    ],
-    "correctAnswer": 3
-  },
-  {
-    "id": 71,
-    "infinitive": "bring",
-    "translation": "traer",
-    "type": "irregular",
-    "form": "past-participle",
-    "difficulty": "medium",
-    "options": [
-      "brought",
-      "bringed",
-      "brung",
-      "broughten"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 72,
-    "infinitive": "think",
-    "translation": "pensar",
-    "type": "irregular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "thunk",
-      "thinked",
-      "thought",
-      "thoughted"
-    ],
-    "correctAnswer": 2
-  },
-  {
-    "id": 73,
-    "infinitive": "think",
-    "translation": "pensar",
-    "type": "irregular",
-    "form": "past-participle",
-    "difficulty": "medium",
-    "options": [
-      "thunk",
-      "thoughted",
-      "thinked",
-      "thought"
-    ],
-    "correctAnswer": 3
-  },
-  {
-    "id": 74,
-    "infinitive": "teach",
-    "translation": "ensenar",
-    "type": "irregular",
-    "form": "past-simple",
-    "difficulty": "medium",
-    "options": [
-      "taughted",
-      "taught",
-      "tought",
-      "teached"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "id": 75,
-    "infinitive": "teach",
-    "translation": "ensenar",
-    "type": "irregular",
-    "form": "past-participle",
-    "difficulty": "medium",
-    "options": [
-      "taught",
-      "taughted",
-      "teached",
-      "tought"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 76,
-    "infinitive": "catch",
-    "translation": "atrapar",
-    "type": "irregular",
-    "form": "past-simple",
-    "difficulty": "medium",
-    "options": [
-      "catched",
-      "caught",
-      "caughted",
-      "cought"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "id": 77,
-    "infinitive": "catch",
-    "translation": "atrapar",
-    "type": "irregular",
-    "form": "past-participle",
-    "difficulty": "medium",
-    "options": [
-      "caught",
-      "cought",
-      "caughten",
-      "catched"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 78,
-    "infinitive": "fight",
-    "translation": "pelear",
-    "type": "irregular",
-    "form": "past-simple",
-    "difficulty": "medium",
-    "options": [
-      "fighty",
-      "fought",
-      "foughted",
-      "fighted"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "id": 79,
-    "infinitive": "fight",
-    "translation": "pelear",
-    "type": "irregular",
-    "form": "past-participle",
-    "difficulty": "hard",
-    "options": [
-      "foughten",
-      "fought",
-      "foughted",
-      "fighted"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "id": 80,
-    "infinitive": "find",
-    "translation": "encontrar",
-    "type": "irregular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "found",
-      "fand",
-      "founded",
-      "finded"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 81,
-    "infinitive": "find",
-    "translation": "encontrar",
-    "type": "irregular",
-    "form": "past-participle",
-    "difficulty": "medium",
-    "options": [
-      "founden",
-      "found",
-      "founded",
-      "finded"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "id": 82,
-    "infinitive": "get",
-    "translation": "obtener",
-    "type": "irregular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "got",
-      "gotten",
-      "getted",
-      "goted"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 83,
-    "infinitive": "get",
-    "translation": "obtener",
-    "type": "irregular",
-    "form": "past-participle",
-    "difficulty": "medium",
-    "options": [
-      "got",
-      "getted",
-      "gotten",
-      "goted"
-    ],
-    "correctAnswer": 2
-  },
-  {
-    "id": 84,
-    "infinitive": "hold",
-    "translation": "sostener",
-    "type": "irregular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "helded",
-      "held",
-      "holden",
-      "holded"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "id": 85,
-    "infinitive": "hold",
-    "translation": "sostener",
-    "type": "irregular",
-    "form": "past-participle",
-    "difficulty": "medium",
-    "options": [
-      "helden",
-      "held",
-      "holded",
-      "holden"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "id": 86,
-    "infinitive": "keep",
-    "translation": "mantener / guardar",
-    "type": "irregular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "kepped",
-      "keeped",
-      "kept",
-      "kepted"
-    ],
-    "correctAnswer": 2
-  },
-  {
-    "id": 87,
-    "infinitive": "keep",
-    "translation": "mantener / guardar",
-    "type": "irregular",
-    "form": "past-participle",
-    "difficulty": "medium",
-    "options": [
-      "kepten",
-      "kepped",
-      "kept",
-      "keeped"
-    ],
-    "correctAnswer": 2
-  },
-  {
-    "id": 88,
-    "infinitive": "lead",
-    "translation": "liderar",
-    "type": "irregular",
-    "form": "past-simple",
-    "difficulty": "medium",
-    "options": [
-      "leaded",
-      "lead",
-      "led",
-      "leadad"
-    ],
-    "correctAnswer": 2
-  },
-  {
-    "id": 89,
-    "infinitive": "lead",
-    "translation": "liderar",
-    "type": "irregular",
-    "form": "past-participle",
-    "difficulty": "hard",
-    "options": [
-      "lead",
-      "leaden",
-      "leaded",
-      "led"
-    ],
-    "correctAnswer": 3
-  },
-  {
-    "id": 90,
-    "infinitive": "leave",
-    "translation": "dejar / salir",
-    "type": "irregular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "lefed",
-      "left",
-      "leaved",
-      "leavened"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "id": 91,
-    "infinitive": "leave",
-    "translation": "dejar / salir",
-    "type": "irregular",
-    "form": "past-participle",
-    "difficulty": "medium",
-    "options": [
-      "left",
-      "leften",
-      "leaved",
-      "leavened"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 92,
-    "infinitive": "lend",
-    "translation": "prestar",
-    "type": "irregular",
-    "form": "past-simple",
-    "difficulty": "medium",
-    "options": [
-      "lend",
-      "lended",
-      "lent",
-      "lented"
-    ],
-    "correctAnswer": 2
-  },
-  {
-    "id": 93,
-    "infinitive": "lend",
-    "translation": "prestar",
-    "type": "irregular",
-    "form": "past-participle",
-    "difficulty": "hard",
-    "options": [
-      "lent",
-      "lenten",
-      "lended",
-      "lentened"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 94,
-    "infinitive": "lose",
-    "translation": "perder",
-    "type": "irregular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "loosed",
-      "losted",
-      "losed",
-      "lost"
-    ],
-    "correctAnswer": 3
-  },
-  {
-    "id": 95,
-    "infinitive": "lose",
-    "translation": "perder",
-    "type": "irregular",
-    "form": "past-participle",
-    "difficulty": "medium",
-    "options": [
-      "loosed",
-      "losed",
-      "losten",
-      "lost"
-    ],
-    "correctAnswer": 3
-  },
-  {
-    "id": 96,
-    "infinitive": "make",
-    "translation": "hacer / fabricar",
-    "type": "irregular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "maked",
-      "maid",
-      "made",
-      "mad"
-    ],
-    "correctAnswer": 2
-  },
-  {
-    "id": 97,
-    "infinitive": "make",
-    "translation": "hacer / fabricar",
-    "type": "irregular",
-    "form": "past-participle",
-    "difficulty": "easy",
-    "options": [
-      "made",
-      "maden",
-      "maid",
-      "maked"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 98,
-    "infinitive": "mean",
-    "translation": "significar",
-    "type": "irregular",
-    "form": "past-simple",
-    "difficulty": "medium",
-    "options": [
-      "meaned",
-      "ment",
-      "meanted",
-      "meant"
-    ],
-    "correctAnswer": 3
-  },
-  {
-    "id": 99,
-    "infinitive": "mean",
-    "translation": "significar",
-    "type": "irregular",
-    "form": "past-participle",
-    "difficulty": "hard",
-    "options": [
-      "meanten",
-      "meaned",
-      "ment",
-      "meant"
-    ],
-    "correctAnswer": 3
-  },
-  {
-    "id": 100,
-    "infinitive": "meet",
-    "translation": "conocer / encontrarse",
-    "type": "irregular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "meted",
-      "met",
-      "meeted",
-      "meet"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "id": 101,
-    "infinitive": "meet",
-    "translation": "conocer / encontrarse",
-    "type": "irregular",
-    "form": "past-participle",
-    "difficulty": "medium",
-    "options": [
-      "meten",
-      "meted",
-      "met",
-      "meeted"
-    ],
-    "correctAnswer": 2
-  },
-  {
-    "id": 102,
-    "infinitive": "pay",
-    "translation": "pagar",
-    "type": "irregular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "payed",
-      "poid",
-      "payd",
-      "paid"
-    ],
-    "correctAnswer": 3
-  },
-  {
-    "id": 103,
-    "infinitive": "pay",
-    "translation": "pagar",
-    "type": "irregular",
-    "form": "past-participle",
-    "difficulty": "medium",
-    "options": [
-      "paid",
-      "payeden",
-      "payed",
-      "paiden"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 104,
-    "infinitive": "read",
-    "translation": "leer",
-    "type": "irregular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "readed",
-      "read",
-      "red",
-      "reed"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "id": 105,
-    "infinitive": "read",
-    "translation": "leer",
-    "type": "irregular",
-    "form": "past-participle",
-    "difficulty": "medium",
-    "options": [
-      "readen",
-      "red",
-      "readed",
-      "read"
-    ],
-    "correctAnswer": 3
-  },
-  {
-    "id": 106,
-    "infinitive": "say",
-    "translation": "decir",
-    "type": "irregular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "said",
-      "sayd",
-      "sayed",
-      "sed"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 107,
-    "infinitive": "say",
-    "translation": "decir",
-    "type": "irregular",
-    "form": "past-participle",
-    "difficulty": "medium",
-    "options": [
-      "sayed",
-      "said",
-      "sed",
-      "sayden"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "id": 108,
-    "infinitive": "sell",
-    "translation": "vender",
-    "type": "irregular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "sold",
-      "selled",
-      "seld",
-      "solded"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 109,
-    "infinitive": "sell",
-    "translation": "vender",
-    "type": "irregular",
-    "form": "past-participle",
-    "difficulty": "medium",
-    "options": [
-      "solden",
-      "selled",
-      "sold",
-      "seld"
-    ],
-    "correctAnswer": 2
-  },
-  {
-    "id": 110,
-    "infinitive": "send",
-    "translation": "enviar",
-    "type": "irregular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "sended",
-      "sented",
-      "sent",
-      "send"
-    ],
-    "correctAnswer": 2
-  },
-  {
-    "id": 111,
-    "infinitive": "send",
-    "translation": "enviar",
-    "type": "irregular",
-    "form": "past-participle",
-    "difficulty": "medium",
-    "options": [
-      "sented",
-      "sent",
-      "sended",
-      "senten"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "id": 112,
-    "infinitive": "sit",
-    "translation": "sentarse",
-    "type": "irregular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "sitted",
-      "set",
-      "sat",
-      "sited"
-    ],
-    "correctAnswer": 2
-  },
-  {
-    "id": 113,
-    "infinitive": "sit",
-    "translation": "sentarse",
-    "type": "irregular",
-    "form": "past-participle",
-    "difficulty": "medium",
-    "options": [
-      "sitten",
-      "sitted",
-      "set",
-      "sat"
-    ],
-    "correctAnswer": 3
-  },
-  {
-    "id": 114,
-    "infinitive": "sleep",
-    "translation": "dormir",
-    "type": "irregular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "sleeped",
-      "slepped",
-      "sleped",
-      "slept"
-    ],
-    "correctAnswer": 3
-  },
-  {
-    "id": 115,
-    "infinitive": "sleep",
-    "translation": "dormir",
-    "type": "irregular",
-    "form": "past-participle",
-    "difficulty": "medium",
-    "options": [
-      "sleeped",
-      "slept",
-      "sleped",
-      "slepten"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "id": 116,
-    "infinitive": "spend",
-    "translation": "gastar",
-    "type": "irregular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "spented",
-      "spent",
-      "spend",
-      "spended"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "id": 117,
-    "infinitive": "spend",
-    "translation": "gastar",
-    "type": "irregular",
-    "form": "past-participle",
-    "difficulty": "medium",
-    "options": [
-      "spenten",
-      "spented",
-      "spended",
-      "spent"
-    ],
-    "correctAnswer": 3
-  },
-  {
-    "id": 118,
-    "infinitive": "stand",
-    "translation": "estar de pie",
-    "type": "irregular",
-    "form": "past-simple",
-    "difficulty": "medium",
-    "options": [
-      "stolded",
-      "standed",
-      "stood",
-      "stond"
-    ],
-    "correctAnswer": 2
-  },
-  {
-    "id": 119,
-    "infinitive": "stand",
-    "translation": "estar de pie",
-    "type": "irregular",
-    "form": "past-participle",
-    "difficulty": "hard",
-    "options": [
-      "stood",
-      "stonden",
-      "standed",
-      "stooden"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 120,
-    "infinitive": "tell",
-    "translation": "decir / contar",
-    "type": "irregular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "told",
-      "tolded",
-      "telled",
-      "teld"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 121,
-    "infinitive": "tell",
-    "translation": "decir / contar",
-    "type": "irregular",
-    "form": "past-participle",
-    "difficulty": "medium",
-    "options": [
-      "tolden",
-      "telled",
-      "told",
-      "tolded"
-    ],
-    "correctAnswer": 2
-  },
-  {
-    "id": 122,
-    "infinitive": "understand",
-    "translation": "entender",
-    "type": "irregular",
-    "form": "past-simple",
-    "difficulty": "medium",
-    "options": [
-      "understooded",
-      "understanded",
-      "understood",
-      "understond"
-    ],
-    "correctAnswer": 2
-  },
-  {
-    "id": 123,
-    "infinitive": "understand",
-    "translation": "entender",
-    "type": "irregular",
-    "form": "past-participle",
-    "difficulty": "hard",
-    "options": [
-      "understanded",
-      "understonden",
-      "understood",
-      "understooden"
-    ],
-    "correctAnswer": 2
-  },
-  {
-    "id": 124,
-    "infinitive": "build",
-    "translation": "construir",
-    "type": "irregular",
-    "form": "past-simple",
-    "difficulty": "medium",
-    "options": [
-      "builded",
-      "bild",
-      "built",
-      "builted"
-    ],
-    "correctAnswer": 2
-  },
-  {
-    "id": 125,
-    "infinitive": "build",
-    "translation": "construir",
-    "type": "irregular",
-    "form": "past-participle",
-    "difficulty": "hard",
-    "options": [
-      "builden",
-      "built",
-      "builded",
-      "builted"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "id": 126,
-    "infinitive": "feel",
-    "translation": "sentir",
-    "type": "irregular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "feelled",
-      "felted",
-      "feeld",
-      "felt"
-    ],
-    "correctAnswer": 3
-  },
-  {
-    "id": 127,
-    "infinitive": "feel",
-    "translation": "sentir",
-    "type": "irregular",
-    "form": "past-participle",
-    "difficulty": "medium",
-    "options": [
-      "feelled",
-      "felted",
-      "felten",
-      "felt"
-    ],
-    "correctAnswer": 3
-  },
-  {
-    "id": 128,
-    "infinitive": "hear",
-    "translation": "oir",
-    "type": "irregular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "heared",
-      "heerd",
-      "herd",
-      "heard"
-    ],
-    "correctAnswer": 3
-  },
-  {
-    "id": 129,
-    "infinitive": "hear",
-    "translation": "oir",
-    "type": "irregular",
-    "form": "past-participle",
-    "difficulty": "medium",
-    "options": [
-      "hearden",
-      "heared",
-      "hearded",
-      "heard"
-    ],
-    "correctAnswer": 3
-  },
-  {
-    "id": 130,
-    "infinitive": "lay",
-    "translation": "poner / colocar",
-    "type": "irregular",
-    "form": "past-simple",
-    "difficulty": "hard",
-    "options": [
-      "loyed",
-      "laid",
-      "layed",
-      "layd"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "id": 131,
-    "infinitive": "lay",
-    "translation": "poner / colocar",
-    "type": "irregular",
-    "form": "past-participle",
-    "difficulty": "hard",
-    "options": [
-      "laiden",
-      "layen",
-      "laid",
-      "layed"
-    ],
-    "correctAnswer": 2
-  },
-  {
-    "id": 132,
-    "infinitive": "lie",
-    "translation": "acostarse / echarse",
-    "type": "irregular",
-    "form": "past-simple",
-    "difficulty": "hard",
-    "options": [
-      "lay",
-      "loyed",
-      "lied",
-      "lain"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 133,
-    "infinitive": "lie",
-    "translation": "acostarse / echarse",
-    "type": "irregular",
-    "form": "past-participle",
-    "difficulty": "hard",
-    "options": [
-      "lied",
-      "lay",
-      "lain",
-      "lained"
-    ],
-    "correctAnswer": 2
-  },
-  {
-    "id": 134,
-    "infinitive": "put",
-    "translation": "poner",
-    "type": "irregular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "puting",
-      "puted",
-      "put",
-      "putted"
-    ],
-    "correctAnswer": 2
-  },
-  {
-    "id": 135,
-    "infinitive": "put",
-    "translation": "poner",
-    "type": "irregular",
-    "form": "past-participle",
-    "difficulty": "medium",
-    "options": [
-      "puted",
-      "put",
-      "puten",
-      "putted"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "id": 136,
-    "infinitive": "cut",
-    "translation": "cortar",
-    "type": "irregular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "cuted",
-      "cuting",
-      "cutted",
-      "cut"
-    ],
-    "correctAnswer": 3
-  },
-  {
-    "id": 137,
-    "infinitive": "cut",
-    "translation": "cortar",
-    "type": "irregular",
-    "form": "past-participle",
-    "difficulty": "medium",
-    "options": [
-      "cuted",
-      "cuten",
-      "cut",
-      "cutted"
-    ],
-    "correctAnswer": 2
-  },
-  {
-    "id": 138,
-    "infinitive": "hit",
-    "translation": "golpear",
-    "type": "irregular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "hited",
-      "hiten",
-      "hitted",
-      "hit"
-    ],
-    "correctAnswer": 3
-  },
-  {
-    "id": 139,
-    "infinitive": "hit",
-    "translation": "golpear",
-    "type": "irregular",
-    "form": "past-participle",
-    "difficulty": "medium",
-    "options": [
-      "hiten",
-      "hitted",
-      "hit",
-      "hited"
-    ],
-    "correctAnswer": 2
-  },
-  {
-    "id": 140,
-    "infinitive": "hurt",
-    "translation": "lastimar / doler",
-    "type": "irregular",
-    "form": "past-simple",
-    "difficulty": "medium",
-    "options": [
-      "hurted",
-      "hert",
-      "hurt",
-      "hurten"
-    ],
-    "correctAnswer": 2
-  },
-  {
-    "id": 141,
-    "infinitive": "hurt",
-    "translation": "lastimar / doler",
-    "type": "irregular",
-    "form": "past-participle",
-    "difficulty": "hard",
-    "options": [
-      "hurtened",
-      "hurten",
-      "hurted",
-      "hurt"
-    ],
-    "correctAnswer": 3
-  },
-  {
-    "id": 142,
-    "infinitive": "let",
-    "translation": "dejar / permitir",
-    "type": "irregular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "letten",
-      "let",
-      "letted",
-      "leted"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "id": 143,
-    "infinitive": "let",
-    "translation": "dejar / permitir",
-    "type": "irregular",
-    "form": "past-participle",
-    "difficulty": "medium",
-    "options": [
-      "leten",
-      "leted",
-      "letted",
-      "let"
-    ],
-    "correctAnswer": 3
-  },
-  {
-    "id": 144,
-    "infinitive": "cost",
-    "translation": "costar",
-    "type": "irregular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "costs",
-      "cost",
-      "costered",
-      "costed"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "id": 145,
-    "infinitive": "cost",
-    "translation": "costar",
-    "type": "irregular",
-    "form": "past-participle",
-    "difficulty": "medium",
-    "options": [
-      "costed",
-      "cost",
-      "costen",
-      "costered"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "id": 146,
-    "infinitive": "set",
-    "translation": "establecer / colocar",
-    "type": "irregular",
-    "form": "past-simple",
-    "difficulty": "medium",
-    "options": [
-      "setted",
-      "sitted",
-      "set",
-      "seted"
-    ],
-    "correctAnswer": 2
-  },
-  {
-    "id": 147,
-    "infinitive": "set",
-    "translation": "establecer / colocar",
-    "type": "irregular",
-    "form": "past-participle",
-    "difficulty": "hard",
-    "options": [
-      "setted",
-      "sitted",
-      "set",
-      "seten"
-    ],
-    "correctAnswer": 2
-  },
-  {
-    "id": 148,
-    "infinitive": "win",
-    "translation": "ganar",
-    "type": "irregular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "won",
-      "winned",
-      "wan",
-      "win"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 149,
-    "infinitive": "win",
-    "translation": "ganar",
-    "type": "irregular",
-    "form": "past-participle",
-    "difficulty": "medium",
-    "options": [
-      "won",
-      "wonned",
-      "win",
-      "winned"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 150,
-    "infinitive": "walk",
-    "translation": "caminar",
-    "type": "regular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "walken",
-      "walk",
-      "walked",
-      "walkt"
-    ],
-    "correctAnswer": 2
-  },
-  {
-    "id": 151,
-    "infinitive": "talk",
-    "translation": "hablar / conversar",
-    "type": "regular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "talken",
-      "talk",
-      "talkt",
-      "talked"
-    ],
-    "correctAnswer": 3
-  },
-  {
-    "id": 152,
-    "infinitive": "work",
-    "translation": "trabajar",
-    "type": "regular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "worken",
-      "worked",
-      "workt",
-      "work"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "id": 153,
-    "infinitive": "play",
-    "translation": "jugar",
-    "type": "regular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "plaid",
-      "playen",
-      "playd",
-      "played"
-    ],
-    "correctAnswer": 3
-  },
-  {
-    "id": 154,
-    "infinitive": "help",
-    "translation": "ayudar",
-    "type": "regular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "helped",
-      "holp",
-      "helpt",
-      "help"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 155,
-    "infinitive": "need",
-    "translation": "necesitar",
-    "type": "regular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "neededed",
-      "needed",
-      "need",
-      "needen"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "id": 156,
-    "infinitive": "want",
-    "translation": "querer",
-    "type": "regular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "wanten",
-      "wanted",
-      "want",
-      "wantt"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "id": 157,
-    "infinitive": "call",
-    "translation": "llamar",
-    "type": "regular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "called",
-      "callen",
-      "calld",
-      "callt"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 158,
-    "infinitive": "ask",
-    "translation": "preguntar",
-    "type": "regular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "ask",
-      "asken",
-      "askt",
-      "asked"
-    ],
-    "correctAnswer": 3
-  },
-  {
-    "id": 159,
-    "infinitive": "answer",
-    "translation": "responder",
-    "type": "regular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "answer",
-      "answeren",
-      "answerd",
-      "answered"
-    ],
-    "correctAnswer": 3
-  },
-  {
-    "id": 160,
-    "infinitive": "believe",
-    "translation": "creer",
-    "type": "regular",
-    "form": "past-simple",
-    "difficulty": "medium",
-    "options": [
-      "believde",
-      "believeed",
-      "believed",
-      "believe"
-    ],
-    "correctAnswer": 2
-  },
-  {
-    "id": 161,
-    "infinitive": "change",
-    "translation": "cambiar",
-    "type": "regular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "changen",
-      "changeed",
-      "changed",
-      "changd"
-    ],
-    "correctAnswer": 2
-  },
-  {
-    "id": 162,
-    "infinitive": "clean",
-    "translation": "limpiar",
-    "type": "regular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "cleant",
-      "cleanen",
-      "clean",
-      "cleaned"
-    ],
-    "correctAnswer": 3
-  },
-  {
-    "id": 163,
-    "infinitive": "close",
-    "translation": "cerrar",
-    "type": "regular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "closeed",
-      "closed",
-      "closd",
-      "closen"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "id": 164,
-    "infinitive": "cook",
-    "translation": "cocinar",
-    "type": "regular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "cooked",
-      "cooken",
-      "cookt",
-      "cook"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 165,
-    "infinitive": "dance",
-    "translation": " bailar",
-    "type": "regular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "danceed",
-      "dancd",
-      "danced",
-      "dancen"
-    ],
-    "correctAnswer": 2
-  },
-  {
-    "id": 166,
-    "infinitive": "decide",
-    "translation": "decidir",
-    "type": "regular",
-    "form": "past-simple",
-    "difficulty": "medium",
-    "options": [
-      "deciden",
-      "decid",
-      "decideed",
-      "decided"
-    ],
-    "correctAnswer": 3
-  },
-  {
-    "id": 167,
-    "infinitive": "enjoy",
-    "translation": "disfrutar",
-    "type": "regular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "enjoyen",
-      "enjoyd",
-      "enjoy",
-      "enjoyed"
-    ],
-    "correctAnswer": 3
-  },
-  {
-    "id": 168,
-    "infinitive": "explain",
-    "translation": "explicar",
-    "type": "regular",
-    "form": "past-simple",
-    "difficulty": "medium",
-    "options": [
-      "explainen",
-      "explaind",
-      "explained",
-      "explain"
-    ],
-    "correctAnswer": 2
-  },
-  {
-    "id": 169,
-    "infinitive": "finish",
-    "translation": "terminar",
-    "type": "regular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "finished",
-      "finish",
-      "finishen",
-      "finisht"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 170,
-    "infinitive": "follow",
-    "translation": "seguir",
-    "type": "regular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "followd",
-      "followen",
-      "followed",
-      "follow"
-    ],
-    "correctAnswer": 2
-  },
-  {
-    "id": 171,
-    "infinitive": "happen",
-    "translation": "suceder / ocurrir",
-    "type": "regular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "happend",
-      "happened",
-      "happed",
-      "happen"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "id": 172,
-    "infinitive": "listen",
-    "translation": "escuchar",
-    "type": "regular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "listenen",
-      "listend",
-      "listen",
-      "listened"
-    ],
-    "correctAnswer": 3
-  },
-  {
-    "id": 173,
-    "infinitive": "live",
-    "translation": "vivir",
-    "type": "regular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "liven",
-      "lived",
-      "livd",
-      "liveed"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "id": 174,
-    "infinitive": "love",
-    "translation": "amar",
-    "type": "regular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "loven",
-      "loved",
-      "loveed",
-      "lovd"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "id": 175,
-    "infinitive": "move",
-    "translation": "mover",
-    "type": "regular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "moven",
-      "movd",
-      "moveed",
-      "moved"
-    ],
-    "correctAnswer": 3
-  },
-  {
-    "id": 176,
-    "infinitive": "open",
-    "translation": "abrir",
-    "type": "regular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "openen",
-      "opend",
-      "open",
-      "opened"
-    ],
-    "correctAnswer": 3
-  },
-  {
-    "id": 177,
-    "infinitive": "pick",
-    "translation": "recoger / escoger",
-    "type": "regular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "pickt",
-      "picked",
-      "pick",
-      "picken"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "id": 178,
-    "infinitive": "plan",
-    "translation": "planificar",
-    "type": "regular",
-    "form": "past-simple",
-    "difficulty": "medium",
-    "options": [
-      "planed",
-      "pland",
-      "planned",
-      "plan"
-    ],
-    "correctAnswer": 2
-  },
-  {
-    "id": 179,
-    "infinitive": "rain",
-    "translation": "llover",
-    "type": "regular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "rained",
-      "rain",
-      "rainen",
-      "raind"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 180,
-    "infinitive": "remember",
-    "translation": "recordar",
-    "type": "regular",
-    "form": "past-simple",
-    "difficulty": "medium",
-    "options": [
-      "remembred",
-      "rememberen",
-      "remembered",
-      "rememberd"
-    ],
-    "correctAnswer": 2
-  },
-  {
-    "id": 181,
-    "infinitive": "start",
-    "translation": "empezar / comenzar",
-    "type": "regular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "started",
-      "startd",
-      "starten",
-      "start"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 182,
-    "infinitive": "stop",
-    "translation": "parar / detener",
-    "type": "regular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "stopped",
-      "stoped",
-      "stopd",
-      "stop"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 183,
-    "infinitive": "study",
-    "translation": "estudiar",
-    "type": "regular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "studien",
-      "studyed",
-      "studied",
-      "studyd"
-    ],
-    "correctAnswer": 2
-  },
-  {
-    "id": 184,
-    "infinitive": "travel",
-    "translation": "viajar",
-    "type": "regular",
-    "form": "past-simple",
-    "difficulty": "medium",
-    "options": [
-      "traveld",
-      "travelled",
-      "traveled",
-      "travelen"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "id": 185,
-    "infinitive": "try",
-    "translation": "intentar",
-    "type": "regular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "tryd",
-      "tryen",
-      "tryed",
-      "tried"
-    ],
-    "correctAnswer": 3
-  },
-  {
-    "id": 186,
-    "infinitive": "turn",
-    "translation": "girar / voltear",
-    "type": "regular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "turnd",
-      "turn",
-      "turnen",
-      "turned"
-    ],
-    "correctAnswer": 3
-  },
-  {
-    "id": 187,
-    "infinitive": "use",
-    "translation": "usar / utilizar",
-    "type": "regular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "used",
-      "usen",
-      "useded",
-      "useed"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 188,
-    "infinitive": "visit",
-    "translation": "visitar",
-    "type": "regular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "visiten",
-      "visit",
-      "visited",
-      "visitd"
-    ],
-    "correctAnswer": 2
-  },
-  {
-    "id": 189,
-    "infinitive": "wait",
-    "translation": "esperar",
-    "type": "regular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "waitd",
-      "wait",
-      "waiten",
-      "waited"
-    ],
-    "correctAnswer": 3
-  },
-  {
-    "id": 190,
-    "infinitive": "watch",
-    "translation": "mirar / ver",
-    "type": "regular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "watchen",
-      "watched",
-      "watcht",
-      "watch"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "id": 191,
-    "infinitive": "worry",
-    "translation": "preocuparse",
-    "type": "regular",
-    "form": "past-simple",
-    "difficulty": "medium",
-    "options": [
-      "worried",
-      "worryd",
-      "worrien",
-      "worryed"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 192,
-    "infinitive": "learn",
-    "translation": "aprender",
-    "type": "regular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "learned",
-      "learnd",
-      "learnt",
-      "learnen"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 193,
-    "infinitive": "learn",
-    "translation": "aprender",
-    "type": "regular",
-    "form": "past-participle",
-    "difficulty": "medium",
-    "options": [
-      "learned",
-      "learnt",
-      "learnen",
-      "learneded"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 194,
-    "infinitive": "offer",
-    "translation": "ofrecer",
-    "type": "regular",
-    "form": "past-simple",
-    "difficulty": "medium",
-    "options": [
-      "offered",
-      "offerd",
-      "offerred",
-      "offer"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 195,
-    "infinitive": "carry",
-    "translation": "llevar / cargar",
-    "type": "regular",
-    "form": "past-simple",
-    "difficulty": "medium",
-    "options": [
-      "carryed",
-      "carrid",
-      "carried",
-      "carryd"
-    ],
-    "correctAnswer": 2
-  },
-  {
-    "id": 196,
-    "infinitive": "enjoy",
-    "translation": "disfrutar",
-    "type": "regular",
-    "form": "past-participle",
-    "difficulty": "medium",
-    "options": [
-      "enjoyeded",
-      "enjoyen",
-      "enjoyed",
-      "enjoyd"
-    ],
-    "correctAnswer": 2
-  },
-  {
-    "id": 197,
-    "infinitive": "fix",
-    "translation": "arreglar / reparar",
-    "type": "regular",
-    "form": "past-simple",
-    "difficulty": "medium",
-    "options": [
-      "fix",
-      "fixt",
-      "fixen",
-      "fixed"
-    ],
-    "correctAnswer": 3
-  },
-  {
-    "id": 198,
-    "infinitive": "hate",
-    "translation": "odiar",
-    "type": "regular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "hated",
-      "hateed",
-      "haten",
-      "hatd"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 199,
-    "infinitive": "jump",
-    "translation": "saltar",
-    "type": "regular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "jumpt",
-      "jumped",
-      "jumpen",
-      "jump"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "id": 200,
-    "infinitive": "kick",
-    "translation": "patear",
-    "type": "regular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "kicked",
-      "kick",
-      "kickt",
-      "kicken"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 201,
-    "infinitive": "kill",
-    "translation": "matar",
-    "type": "regular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "kill",
-      "killed",
-      "killt",
-      "killen"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "id": 202,
-    "infinitive": "kiss",
-    "translation": "besar",
-    "type": "regular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "kissed",
-      "kiss",
-      "kisst",
-      "kissen"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 203,
-    "infinitive": "laugh",
-    "translation": "reir",
-    "type": "regular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "laugh",
-      "laught",
-      "laughed",
-      "laughen"
-    ],
-    "correctAnswer": 2
-  },
-  {
-    "id": 204,
-    "infinitive": "like",
-    "translation": "gustar",
-    "type": "regular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "liked",
-      "liken",
-      "likd",
-      "likeed"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 205,
-    "infinitive": "marry",
-    "translation": "casar",
-    "type": "regular",
-    "form": "past-simple",
-    "difficulty": "medium",
-    "options": [
-      "married",
-      "marrid",
-      "marryed",
-      "maryd"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 206,
-    "infinitive": "smile",
-    "translation": "sonreir",
-    "type": "regular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "smilen",
-      "smiled",
-      "smild",
-      "smileed"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "id": 207,
-    "infinitive": "type",
-    "translation": "escribir a maquina",
-    "type": "regular",
-    "form": "past-simple",
-    "difficulty": "medium",
-    "options": [
-      "typd",
-      "typeed",
-      "typed",
-      "typt"
-    ],
-    "correctAnswer": 2
-  },
-  {
-    "id": 208,
-    "infinitive": "cry",
-    "translation": "llorar",
-    "type": "regular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "cried",
-      "cryd",
-      "cryen",
-      "cryed"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 209,
-    "infinitive": "save",
-    "translation": "ahorrar / salvar",
-    "type": "regular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "savd",
-      "saved",
-      "saven",
-      "saveed"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "id": 210,
-    "infinitive": "borrow",
-    "translation": "pedir prestado",
-    "type": "regular",
-    "form": "past-simple",
-    "difficulty": "medium",
-    "options": [
-      "borrowed",
-      "borrowd",
-      "borrow",
-      "borrowen"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 211,
-    "infinitive": "count",
-    "translation": "contar",
-    "type": "regular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "countd",
-      "count",
-      "counted",
-      "counten"
-    ],
-    "correctAnswer": 2
-  },
-  {
-    "id": 212,
-    "infinitive": "dream",
-    "translation": "sonar",
-    "type": "irregular",
-    "form": "past-simple",
-    "difficulty": "medium",
-    "options": [
-      "dreamed",
-      "dreamten",
-      "dreamen",
-      "dreamt"
-    ],
-    "correctAnswer": 3
-  },
-  {
-    "id": 213,
-    "infinitive": "dream",
-    "translation": "sonar",
-    "type": "irregular",
-    "form": "past-participle",
-    "difficulty": "hard",
-    "options": [
-      "dreamed",
-      "dreamen",
-      "dreamten",
-      "dreamt"
-    ],
-    "correctAnswer": 3
-  },
-  {
-    "id": 214,
-    "infinitive": "burn",
-    "translation": "quemar",
-    "type": "irregular",
-    "form": "past-simple",
-    "difficulty": "medium",
-    "options": [
-      "burnt",
-      "burnten",
-      "burned",
-      "burnen"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 215,
-    "infinitive": "burn",
-    "translation": "quemar",
-    "type": "irregular",
-    "form": "past-participle",
-    "difficulty": "hard",
-    "options": [
-      "burnt",
-      "burnen",
-      "burneded",
-      "burned"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 216,
-    "infinitive": "light",
-    "translation": "encender / iluminar",
-    "type": "irregular",
-    "form": "past-simple",
-    "difficulty": "hard",
-    "options": [
-      "lighten",
-      "litted",
-      "lit",
-      "lighted"
-    ],
-    "correctAnswer": 2
-  },
-  {
-    "id": 217,
-    "infinitive": "light",
-    "translation": "encender / iluminar",
-    "type": "irregular",
-    "form": "past-participle",
-    "difficulty": "hard",
-    "options": [
-      "lighted",
-      "lighten",
-      "litten",
-      "lit"
-    ],
-    "correctAnswer": 3
-  },
-  {
-    "id": 218,
-    "infinitive": "quit",
-    "translation": "renunciar / dejar",
-    "type": "irregular",
-    "form": "past-simple",
-    "difficulty": "medium",
-    "options": [
-      "quited",
-      "quit",
-      "quitted",
-      "quiten"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "id": 219,
-    "infinitive": "quit",
-    "translation": "renunciar / dejar",
-    "type": "irregular",
-    "form": "past-participle",
-    "difficulty": "hard",
-    "options": [
-      "quitten",
-      "quitted",
-      "quiten",
-      "quit"
-    ],
-    "correctAnswer": 3
-  },
-  {
-    "id": 220,
-    "infinitive": "shut",
-    "translation": "cerrar",
-    "type": "irregular",
-    "form": "past-simple",
-    "difficulty": "medium",
-    "options": [
-      "shut",
-      "shuten",
-      "shuted",
-      "shutted"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 221,
-    "infinitive": "shut",
-    "translation": "cerrar",
-    "type": "irregular",
-    "form": "past-participle",
-    "difficulty": "hard",
-    "options": [
-      "shut",
-      "shutten",
-      "shuten",
-      "shutted"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 222,
-    "infinitive": "spread",
-    "translation": "extender / difundir",
-    "type": "irregular",
-    "form": "past-simple",
-    "difficulty": "hard",
-    "options": [
-      "spreaded",
-      "spread",
-      "spred",
-      "spreden"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "id": 223,
-    "infinitive": "spread",
-    "translation": "extender / difundir",
-    "type": "irregular",
-    "form": "past-participle",
-    "difficulty": "hard",
-    "options": [
-      "spreaded",
-      "spreden",
-      "spredden",
-      "spread"
-    ],
-    "correctAnswer": 3
-  },
-  {
-    "id": 224,
-    "infinitive": "bet",
-    "translation": "apostar",
-    "type": "irregular",
-    "form": "past-simple",
-    "difficulty": "hard",
-    "options": [
-      "betted",
-      "bited",
-      "beten",
-      "bet"
-    ],
-    "correctAnswer": 3
-  },
-  {
-    "id": 225,
-    "infinitive": "bet",
-    "translation": "apostar",
-    "type": "irregular",
-    "form": "past-participle",
-    "difficulty": "hard",
-    "options": [
-      "betten",
-      "betted",
-      "beten",
-      "bet"
-    ],
-    "correctAnswer": 3
-  },
-  {
-    "id": 226,
-    "infinitive": "offer",
-    "translation": "ofrecer",
-    "type": "regular",
-    "form": "past-participle",
-    "difficulty": "medium",
-    "options": [
-      "offerd",
-      "offered",
-      "offerred",
-      "offeren"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "id": 227,
-    "infinitive": "shave",
-    "translation": "afeitar",
-    "type": "irregular",
-    "form": "past-participle",
-    "difficulty": "hard",
-    "options": [
-      "shavened",
-      "shaveed",
-      "shaven",
-      "shaved"
-    ],
-    "correctAnswer": 2
-  },
-  {
-    "id": 228,
-    "infinitive": "show",
-    "translation": "mostrar",
-    "type": "irregular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "showeden",
-      "shown",
-      "showeded",
-      "showed"
-    ],
-    "correctAnswer": 3
-  },
-  {
-    "id": 229,
-    "infinitive": "show",
-    "translation": "mostrar",
-    "type": "irregular",
-    "form": "past-participle",
-    "difficulty": "medium",
-    "options": [
-      "shown",
-      "showed",
-      "showeded",
-      "showeden"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 230,
-    "infinitive": "forget",
-    "translation": "olvidar",
-    "type": "irregular",
-    "form": "past-simple",
-    "difficulty": "medium",
-    "options": [
-      "forgotten",
-      "forgeted",
-      "forgot",
-      "forgat"
-    ],
-    "correctAnswer": 2
-  },
-  {
-    "id": 231,
-    "infinitive": "forget",
-    "translation": "olvidar",
-    "type": "irregular",
-    "form": "past-participle",
-    "difficulty": "medium",
-    "options": [
-      "forgaten",
-      "forgot",
-      "forgeted",
-      "forgotten"
-    ],
-    "correctAnswer": 3
-  },
-  {
-    "id": 232,
-    "infinitive": "fall",
-    "translation": "caer",
-    "type": "irregular",
-    "form": "past-simple",
-    "difficulty": "medium",
-    "options": [
-      "felled",
-      "fallen",
-      "fell",
-      "falled"
-    ],
-    "correctAnswer": 2
-  },
-  {
-    "id": 233,
-    "infinitive": "fall",
-    "translation": "caer",
-    "type": "irregular",
-    "form": "past-participle",
-    "difficulty": "medium",
-    "options": [
-      "fallen",
-      "falled",
-      "fell",
-      "felled"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 234,
-    "infinitive": "feed",
-    "translation": "alimentar",
-    "type": "irregular",
-    "form": "past-simple",
-    "difficulty": "medium",
-    "options": [
-      "feeded",
-      "fed",
-      "feded",
-      "feed"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "id": 235,
-    "infinitive": "feed",
-    "translation": "alimentar",
-    "type": "irregular",
-    "form": "past-participle",
-    "difficulty": "hard",
-    "options": [
-      "feeded",
-      "feden",
-      "fed",
-      "feed"
-    ],
-    "correctAnswer": 2
-  },
-  {
-    "id": 236,
-    "infinitive": "swing",
-    "translation": "balancearse",
-    "type": "irregular",
-    "form": "past-simple",
-    "difficulty": "hard",
-    "options": [
-      "swinged",
-      "swang",
-      "swung",
-      "swingened"
-    ],
-    "correctAnswer": 2
-  },
-  {
-    "id": 237,
-    "infinitive": "swing",
-    "translation": "balancearse",
-    "type": "irregular",
-    "form": "past-participle",
-    "difficulty": "hard",
-    "options": [
-      "swungen",
-      "swang",
-      "swung",
-      "swinged"
-    ],
-    "correctAnswer": 2
-  },
-  {
-    "id": 238,
-    "infinitive": "stick",
-    "translation": "pegar / adherir",
-    "type": "irregular",
-    "form": "past-simple",
-    "difficulty": "hard",
-    "options": [
-      "sticked",
-      "stucken",
-      "stack",
-      "stuck"
-    ],
-    "correctAnswer": 3
-  },
-  {
-    "id": 239,
-    "infinitive": "stick",
-    "translation": "pegar / adherir",
-    "type": "irregular",
-    "form": "past-participle",
-    "difficulty": "hard",
-    "options": [
-      "stucken",
-      "sticked",
-      "stuck",
-      "stack"
-    ],
-    "correctAnswer": 2
-  },
-  {
-    "id": 240,
-    "infinitive": "strike",
-    "translation": "golpear",
-    "type": "irregular",
-    "form": "past-simple",
-    "difficulty": "hard",
-    "options": [
-      "strucken",
-      "striked",
-      "struck",
-      "strock"
-    ],
-    "correctAnswer": 2
-  },
-  {
-    "id": 241,
-    "infinitive": "strike",
-    "translation": "golpear",
-    "type": "irregular",
-    "form": "past-participle",
-    "difficulty": "hard",
-    "options": [
-      "striked",
-      "struck",
-      "stricken",
-      "strucken"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "id": 242,
-    "infinitive": "dig",
-    "translation": "cavar",
-    "type": "irregular",
-    "form": "past-simple",
-    "difficulty": "hard",
-    "options": [
-      "dogen",
-      "digged",
-      "dag",
-      "dug"
-    ],
-    "correctAnswer": 3
-  },
-  {
-    "id": 243,
-    "infinitive": "dig",
-    "translation": "cavar",
-    "type": "irregular",
-    "form": "past-participle",
-    "difficulty": "hard",
-    "options": [
-      "dug",
-      "digged",
-      "dungen",
-      "dagen"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 244,
-    "infinitive": "bleed",
-    "translation": "sangrar",
-    "type": "irregular",
-    "form": "past-simple",
-    "difficulty": "hard",
-    "options": [
-      "bled",
-      "bleeded",
-      "bloden",
-      "bledded"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 245,
-    "infinitive": "bleed",
-    "translation": "sangrar",
-    "type": "irregular",
-    "form": "past-participle",
-    "difficulty": "hard",
-    "options": [
-      "bled",
-      "bledden",
-      "bleded",
-      "bleeded"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 246,
-    "infinitive": "bend",
-    "translation": "doblar / inclinar",
-    "type": "irregular",
-    "form": "past-simple",
-    "difficulty": "hard",
-    "options": [
-      "bented",
-      "bent",
-      "bended",
-      "bend"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "id": 247,
-    "infinitive": "bend",
-    "translation": "doblar / inclinar",
-    "type": "irregular",
-    "form": "past-participle",
-    "difficulty": "hard",
-    "options": [
-      "bent",
-      "bented",
-      "benten",
-      "bended"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 248,
-    "infinitive": "climb",
-    "translation": "escalar / subir",
-    "type": "regular",
-    "form": "past-simple",
-    "difficulty": "easy",
-    "options": [
-      "clamb",
-      "climbt",
-      "climbed",
-      "clomb"
-    ],
-    "correctAnswer": 2
-  },
-  {
-    "id": 249,
-    "infinitive": "owe",
-    "translation": "deber",
-    "type": "regular",
-    "form": "past-simple",
-    "difficulty": "medium",
-    "options": [
-      "owed",
-      "owd",
-      "oweed",
-      "owen"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 250,
-    "infinitive": "earn",
-    "translation": "ganar (dinero)",
-    "type": "regular",
-    "form": "past-simple",
-    "difficulty": "medium",
-    "options": [
-      "earnen",
-      "earnt",
-      "earnd",
-      "earned"
-    ],
-    "correctAnswer": 3
-  }
-]
+    id: 1,
+    infinitive: 'be',
+    translation: 'ser / estar',
+    type: 'irregular',
+    form: 'past-participle',
+    difficulty: 'easy',
+    options: ['was/were', 'being', 'been', 'beed'],
+    correctAnswer: 2,
+  },
+  {
+    id: 2,
+    infinitive: 'go',
+    translation: 'ir',
+    type: 'irregular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['goed', 'went', 'wented', 'gone'],
+    correctAnswer: 1,
+  },
+  {
+    id: 3,
+    infinitive: 'go',
+    translation: 'ir',
+    type: 'irregular',
+    form: 'past-participle',
+    difficulty: 'easy',
+    options: ['goed', 'went', 'gone', 'going'],
+    correctAnswer: 2,
+  },
+  {
+    id: 4,
+    infinitive: 'eat',
+    translation: 'comer',
+    type: 'irregular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['eaten', 'ate', 'eated', 'et'],
+    correctAnswer: 1,
+  },
+  {
+    id: 5,
+    infinitive: 'eat',
+    translation: 'comer',
+    type: 'irregular',
+    form: 'past-participle',
+    difficulty: 'easy',
+    options: ['eaten', 'ating', 'eated', 'ate'],
+    correctAnswer: 0,
+  },
+  {
+    id: 6,
+    infinitive: 'drink',
+    translation: 'beber',
+    type: 'irregular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['drink', 'drinked', 'drunk', 'drank'],
+    correctAnswer: 3,
+  },
+  {
+    id: 7,
+    infinitive: 'drink',
+    translation: 'beber',
+    type: 'irregular',
+    form: 'past-participle',
+    difficulty: 'easy',
+    options: ['drank', 'drunk', 'drinken', 'drinked'],
+    correctAnswer: 1,
+  },
+  {
+    id: 8,
+    infinitive: 'write',
+    translation: 'escribir',
+    type: 'irregular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['wrotes', 'writed', 'written', 'wrote'],
+    correctAnswer: 3,
+  },
+  {
+    id: 9,
+    infinitive: 'write',
+    translation: 'escribir',
+    type: 'irregular',
+    form: 'past-participle',
+    difficulty: 'easy',
+    options: ['writed', 'written', 'wrote', 'wroten'],
+    correctAnswer: 1,
+  },
+  {
+    id: 10,
+    infinitive: 'speak',
+    translation: 'hablar',
+    type: 'irregular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['spoken', 'spoked', 'speaked', 'spoke'],
+    correctAnswer: 3,
+  },
+  {
+    id: 11,
+    infinitive: 'speak',
+    translation: 'hablar',
+    type: 'irregular',
+    form: 'past-participle',
+    difficulty: 'easy',
+    options: ['spoke', 'speaked', 'spoken', 'spoked'],
+    correctAnswer: 2,
+  },
+  {
+    id: 12,
+    infinitive: 'take',
+    translation: 'tomar',
+    type: 'irregular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['toke', 'taked', 'taken', 'took'],
+    correctAnswer: 3,
+  },
+  {
+    id: 13,
+    infinitive: 'take',
+    translation: 'tomar',
+    type: 'irregular',
+    form: 'past-participle',
+    difficulty: 'easy',
+    options: ['took', 'toke', 'taken', 'taked'],
+    correctAnswer: 2,
+  },
+  {
+    id: 14,
+    infinitive: 'break',
+    translation: 'romper',
+    type: 'irregular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['broke', 'broken', 'breaked', 'broked'],
+    correctAnswer: 0,
+  },
+  {
+    id: 15,
+    infinitive: 'break',
+    translation: 'romper',
+    type: 'irregular',
+    form: 'past-participle',
+    difficulty: 'easy',
+    options: ['broked', 'breaked', 'broken', 'broke'],
+    correctAnswer: 2,
+  },
+  {
+    id: 16,
+    infinitive: 'swim',
+    translation: 'nadar',
+    type: 'irregular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['swum', 'swimmed', 'swim', 'swam'],
+    correctAnswer: 3,
+  },
+  {
+    id: 17,
+    infinitive: 'swim',
+    translation: 'nadar',
+    type: 'irregular',
+    form: 'past-participle',
+    difficulty: 'medium',
+    options: ['swimmed', 'swimen', 'swum', 'swam'],
+    correctAnswer: 2,
+  },
+  {
+    id: 18,
+    infinitive: 'sing',
+    translation: 'cantar',
+    type: 'irregular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['sung', 'sang', 'singed', 'sing'],
+    correctAnswer: 1,
+  },
+  {
+    id: 19,
+    infinitive: 'sing',
+    translation: 'cantar',
+    type: 'irregular',
+    form: 'past-participle',
+    difficulty: 'medium',
+    options: ['sung', 'singed', 'sang', 'sungen'],
+    correctAnswer: 0,
+  },
+  {
+    id: 20,
+    infinitive: 'begin',
+    translation: 'empezar',
+    type: 'irregular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['began', 'begun', 'beganen', 'beginned'],
+    correctAnswer: 0,
+  },
+  {
+    id: 21,
+    infinitive: 'begin',
+    translation: 'empezar',
+    type: 'irregular',
+    form: 'past-participle',
+    difficulty: 'medium',
+    options: ['beginned', 'began', 'begunnen', 'begun'],
+    correctAnswer: 3,
+  },
+  {
+    id: 22,
+    infinitive: 'drive',
+    translation: 'conducir',
+    type: 'irregular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['droved', 'driven', 'drove', 'drived'],
+    correctAnswer: 2,
+  },
+  {
+    id: 23,
+    infinitive: 'drive',
+    translation: 'conducir',
+    type: 'irregular',
+    form: 'past-participle',
+    difficulty: 'medium',
+    options: ['drived', 'driven', 'dreven', 'drove'],
+    correctAnswer: 1,
+  },
+  {
+    id: 24,
+    infinitive: 'fly',
+    translation: 'volar',
+    type: 'irregular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['flown', 'flow', 'flied', 'flew'],
+    correctAnswer: 3,
+  },
+  {
+    id: 25,
+    infinitive: 'fly',
+    translation: 'volar',
+    type: 'irregular',
+    form: 'past-participle',
+    difficulty: 'medium',
+    options: ['flowed', 'flown', 'flew', 'flied'],
+    correctAnswer: 1,
+  },
+  {
+    id: 26,
+    infinitive: 'give',
+    translation: 'dar',
+    type: 'irregular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['gived', 'gaven', 'given', 'gave'],
+    correctAnswer: 3,
+  },
+  {
+    id: 27,
+    infinitive: 'give',
+    translation: 'dar',
+    type: 'irregular',
+    form: 'past-participle',
+    difficulty: 'easy',
+    options: ['given', 'gived', 'gaven', 'gave'],
+    correctAnswer: 0,
+  },
+  {
+    id: 28,
+    infinitive: 'know',
+    translation: 'saber / conocer',
+    type: 'irregular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['knowed', 'knewed', 'known', 'knew'],
+    correctAnswer: 3,
+  },
+  {
+    id: 29,
+    infinitive: 'know',
+    translation: 'saber / conocer',
+    type: 'irregular',
+    form: 'past-participle',
+    difficulty: 'easy',
+    options: ['knew', 'known', 'knowen', 'knowed'],
+    correctAnswer: 1,
+  },
+  {
+    id: 30,
+    infinitive: 'see',
+    translation: 'ver',
+    type: 'irregular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['saw', 'sawed', 'seed', 'seen'],
+    correctAnswer: 0,
+  },
+  {
+    id: 31,
+    infinitive: 'see',
+    translation: 'ver',
+    type: 'irregular',
+    form: 'past-participle',
+    difficulty: 'easy',
+    options: ['seen', 'saw', 'seeing', 'seed'],
+    correctAnswer: 0,
+  },
+  {
+    id: 32,
+    infinitive: 'throw',
+    translation: 'lanzar',
+    type: 'irregular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['throw', 'throwed', 'thrown', 'threw'],
+    correctAnswer: 3,
+  },
+  {
+    id: 33,
+    infinitive: 'throw',
+    translation: 'lanzar',
+    type: 'irregular',
+    form: 'past-participle',
+    difficulty: 'medium',
+    options: ['throwned', 'throwed', 'thrown', 'threw'],
+    correctAnswer: 2,
+  },
+  {
+    id: 34,
+    infinitive: 'wear',
+    translation: 'usar / llevar puesto',
+    type: 'irregular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['wore', 'worn', 'weared', 'ware'],
+    correctAnswer: 0,
+  },
+  {
+    id: 35,
+    infinitive: 'wear',
+    translation: 'usar / llevar puesto',
+    type: 'irregular',
+    form: 'past-participle',
+    difficulty: 'medium',
+    options: ['weared', 'woren', 'wore', 'worn'],
+    correctAnswer: 3,
+  },
+  {
+    id: 36,
+    infinitive: 'choose',
+    translation: 'elegir',
+    type: 'irregular',
+    form: 'past-simple',
+    difficulty: 'medium',
+    options: ['chozed', 'chosen', 'chose', 'choosed'],
+    correctAnswer: 2,
+  },
+  {
+    id: 37,
+    infinitive: 'choose',
+    translation: 'elegir',
+    type: 'irregular',
+    form: 'past-participle',
+    difficulty: 'medium',
+    options: ['chosen', 'cheesen', 'choosed', 'chose'],
+    correctAnswer: 0,
+  },
+  {
+    id: 38,
+    infinitive: 'freeze',
+    translation: 'congelar',
+    type: 'irregular',
+    form: 'past-simple',
+    difficulty: 'medium',
+    options: ['frozed', 'froze', 'frozen', 'freezed'],
+    correctAnswer: 1,
+  },
+  {
+    id: 39,
+    infinitive: 'freeze',
+    translation: 'congelar',
+    type: 'irregular',
+    form: 'past-participle',
+    difficulty: 'medium',
+    options: ['froze', 'frozed', 'frozen', 'freezed'],
+    correctAnswer: 2,
+  },
+  {
+    id: 40,
+    infinitive: 'hide',
+    translation: 'esconder',
+    type: 'irregular',
+    form: 'past-simple',
+    difficulty: 'medium',
+    options: ['hidden', 'hided', 'hiden', 'hid'],
+    correctAnswer: 3,
+  },
+  {
+    id: 41,
+    infinitive: 'hide',
+    translation: 'esconder',
+    type: 'irregular',
+    form: 'past-participle',
+    difficulty: 'medium',
+    options: ['hid', 'hidden', 'hiden', 'hided'],
+    correctAnswer: 1,
+  },
+  {
+    id: 42,
+    infinitive: 'bite',
+    translation: 'morder',
+    type: 'irregular',
+    form: 'past-simple',
+    difficulty: 'medium',
+    options: ['bitten', 'bite', 'bit', 'bited'],
+    correctAnswer: 2,
+  },
+  {
+    id: 43,
+    infinitive: 'bite',
+    translation: 'morder',
+    type: 'irregular',
+    form: 'past-participle',
+    difficulty: 'hard',
+    options: ['bote', 'bited', 'bitten', 'bit'],
+    correctAnswer: 2,
+  },
+  {
+    id: 44,
+    infinitive: 'blow',
+    translation: 'soplar',
+    type: 'irregular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['blew', 'blowed', 'blewn', 'blown'],
+    correctAnswer: 0,
+  },
+  {
+    id: 45,
+    infinitive: 'blow',
+    translation: 'soplar',
+    type: 'irregular',
+    form: 'past-participle',
+    difficulty: 'medium',
+    options: ['blowed', 'blew', 'blowen', 'blown'],
+    correctAnswer: 3,
+  },
+  {
+    id: 46,
+    infinitive: 'draw',
+    translation: 'dibujar',
+    type: 'irregular',
+    form: 'past-simple',
+    difficulty: 'medium',
+    options: ['drew', 'drawn', 'drawed', 'drown'],
+    correctAnswer: 0,
+  },
+  {
+    id: 47,
+    infinitive: 'draw',
+    translation: 'dibujar',
+    type: 'irregular',
+    form: 'past-participle',
+    difficulty: 'medium',
+    options: ['drawn', 'drown', 'drawed', 'drew'],
+    correctAnswer: 0,
+  },
+  {
+    id: 48,
+    infinitive: 'grow',
+    translation: 'crecer',
+    type: 'irregular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['growed', 'grew', 'grewed', 'grown'],
+    correctAnswer: 1,
+  },
+  {
+    id: 49,
+    infinitive: 'grow',
+    translation: 'crecer',
+    type: 'irregular',
+    form: 'past-participle',
+    difficulty: 'medium',
+    options: ['grown', 'grew', 'growen', 'growed'],
+    correctAnswer: 0,
+  },
+  {
+    id: 50,
+    infinitive: 'rise',
+    translation: 'elevarse',
+    type: 'irregular',
+    form: 'past-simple',
+    difficulty: 'medium',
+    options: ['rose', 'risen', 'rised', 'roze'],
+    correctAnswer: 0,
+  },
+  {
+    id: 51,
+    infinitive: 'rise',
+    translation: 'elevarse',
+    type: 'irregular',
+    form: 'past-participle',
+    difficulty: 'hard',
+    options: ['risen', 'rised', 'rose', 'rozed'],
+    correctAnswer: 0,
+  },
+  {
+    id: 52,
+    infinitive: 'shake',
+    translation: 'agitar',
+    type: 'irregular',
+    form: 'past-simple',
+    difficulty: 'medium',
+    options: ['shook', 'shooken', 'shaked', 'shaken'],
+    correctAnswer: 0,
+  },
+  {
+    id: 53,
+    infinitive: 'shake',
+    translation: 'agitar',
+    type: 'irregular',
+    form: 'past-participle',
+    difficulty: 'hard',
+    options: ['shaken', 'shook', 'shaked', 'shooken'],
+    correctAnswer: 0,
+  },
+  {
+    id: 54,
+    infinitive: 'steal',
+    translation: 'robar',
+    type: 'irregular',
+    form: 'past-simple',
+    difficulty: 'medium',
+    options: ['stoled', 'stealed', 'stole', 'stolen'],
+    correctAnswer: 2,
+  },
+  {
+    id: 55,
+    infinitive: 'steal',
+    translation: 'robar',
+    type: 'irregular',
+    form: 'past-participle',
+    difficulty: 'medium',
+    options: ['stole', 'stealed', 'stoled', 'stolen'],
+    correctAnswer: 3,
+  },
+  {
+    id: 56,
+    infinitive: 'tear',
+    translation: 'rasgar',
+    type: 'irregular',
+    form: 'past-simple',
+    difficulty: 'hard',
+    options: ['teared', 'tore', 'tared', 'torn'],
+    correctAnswer: 1,
+  },
+  {
+    id: 57,
+    infinitive: 'tear',
+    translation: 'rasgar',
+    type: 'irregular',
+    form: 'past-participle',
+    difficulty: 'hard',
+    options: ['torn', 'teared', 'tore', 'toren'],
+    correctAnswer: 0,
+  },
+  {
+    id: 58,
+    infinitive: 'wake',
+    translation: 'despertar',
+    type: 'irregular',
+    form: 'past-simple',
+    difficulty: 'medium',
+    options: ['woked', 'woken', 'woke', 'waked'],
+    correctAnswer: 2,
+  },
+  {
+    id: 59,
+    infinitive: 'wake',
+    translation: 'despertar',
+    type: 'irregular',
+    form: 'past-participle',
+    difficulty: 'hard',
+    options: ['woken', 'woke', 'waked', 'wokened'],
+    correctAnswer: 0,
+  },
+  {
+    id: 60,
+    infinitive: 'ring',
+    translation: 'sonar (timbre)',
+    type: 'irregular',
+    form: 'past-simple',
+    difficulty: 'medium',
+    options: ['ringed', 'rung', 'ranged', 'rang'],
+    correctAnswer: 3,
+  },
+  {
+    id: 61,
+    infinitive: 'ring',
+    translation: 'sonar (timbre)',
+    type: 'irregular',
+    form: 'past-participle',
+    difficulty: 'hard',
+    options: ['rung', 'rang', 'rungen', 'ringed'],
+    correctAnswer: 0,
+  },
+  {
+    id: 62,
+    infinitive: 'run',
+    translation: 'correr',
+    type: 'irregular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['runned', 'ranned', 'run', 'ran'],
+    correctAnswer: 3,
+  },
+  {
+    id: 63,
+    infinitive: 'run',
+    translation: 'correr',
+    type: 'irregular',
+    form: 'past-participle',
+    difficulty: 'medium',
+    options: ['ranned', 'run', 'runned', 'ran'],
+    correctAnswer: 1,
+  },
+  {
+    id: 64,
+    infinitive: 'come',
+    translation: 'venir',
+    type: 'irregular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['come', 'came', 'comed', 'camed'],
+    correctAnswer: 1,
+  },
+  {
+    id: 65,
+    infinitive: 'come',
+    translation: 'venir',
+    type: 'irregular',
+    form: 'past-participle',
+    difficulty: 'medium',
+    options: ['comed', 'came', 'comen', 'come'],
+    correctAnswer: 3,
+  },
+  {
+    id: 66,
+    infinitive: 'become',
+    translation: 'convertirse en',
+    type: 'irregular',
+    form: 'past-simple',
+    difficulty: 'medium',
+    options: ['becamed', 'becomed', 'became', 'become'],
+    correctAnswer: 2,
+  },
+  {
+    id: 67,
+    infinitive: 'become',
+    translation: 'convertirse en',
+    type: 'irregular',
+    form: 'past-participle',
+    difficulty: 'medium',
+    options: ['becamen', 'become', 'becomed', 'became'],
+    correctAnswer: 1,
+  },
+  {
+    id: 68,
+    infinitive: 'buy',
+    translation: 'comprar',
+    type: 'irregular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['bought', 'boughted', 'buy', 'buyed'],
+    correctAnswer: 0,
+  },
+  {
+    id: 69,
+    infinitive: 'buy',
+    translation: 'comprar',
+    type: 'irregular',
+    form: 'past-participle',
+    difficulty: 'easy',
+    options: ['boughten', 'bought', 'boughted', 'buyed'],
+    correctAnswer: 1,
+  },
+  {
+    id: 70,
+    infinitive: 'bring',
+    translation: 'traer',
+    type: 'irregular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['broughted', 'bringed', 'brang', 'brought'],
+    correctAnswer: 3,
+  },
+  {
+    id: 71,
+    infinitive: 'bring',
+    translation: 'traer',
+    type: 'irregular',
+    form: 'past-participle',
+    difficulty: 'medium',
+    options: ['brought', 'bringed', 'brung', 'broughten'],
+    correctAnswer: 0,
+  },
+  {
+    id: 72,
+    infinitive: 'think',
+    translation: 'pensar',
+    type: 'irregular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['thunk', 'thinked', 'thought', 'thoughted'],
+    correctAnswer: 2,
+  },
+  {
+    id: 73,
+    infinitive: 'think',
+    translation: 'pensar',
+    type: 'irregular',
+    form: 'past-participle',
+    difficulty: 'medium',
+    options: ['thunk', 'thoughted', 'thinked', 'thought'],
+    correctAnswer: 3,
+  },
+  {
+    id: 74,
+    infinitive: 'teach',
+    translation: 'ensenar',
+    type: 'irregular',
+    form: 'past-simple',
+    difficulty: 'medium',
+    options: ['taughted', 'taught', 'tought', 'teached'],
+    correctAnswer: 1,
+  },
+  {
+    id: 75,
+    infinitive: 'teach',
+    translation: 'ensenar',
+    type: 'irregular',
+    form: 'past-participle',
+    difficulty: 'medium',
+    options: ['taught', 'taughted', 'teached', 'tought'],
+    correctAnswer: 0,
+  },
+  {
+    id: 76,
+    infinitive: 'catch',
+    translation: 'atrapar',
+    type: 'irregular',
+    form: 'past-simple',
+    difficulty: 'medium',
+    options: ['catched', 'caught', 'caughted', 'cought'],
+    correctAnswer: 1,
+  },
+  {
+    id: 77,
+    infinitive: 'catch',
+    translation: 'atrapar',
+    type: 'irregular',
+    form: 'past-participle',
+    difficulty: 'medium',
+    options: ['caught', 'cought', 'caughten', 'catched'],
+    correctAnswer: 0,
+  },
+  {
+    id: 78,
+    infinitive: 'fight',
+    translation: 'pelear',
+    type: 'irregular',
+    form: 'past-simple',
+    difficulty: 'medium',
+    options: ['fighty', 'fought', 'foughted', 'fighted'],
+    correctAnswer: 1,
+  },
+  {
+    id: 79,
+    infinitive: 'fight',
+    translation: 'pelear',
+    type: 'irregular',
+    form: 'past-participle',
+    difficulty: 'hard',
+    options: ['foughten', 'fought', 'foughted', 'fighted'],
+    correctAnswer: 1,
+  },
+  {
+    id: 80,
+    infinitive: 'find',
+    translation: 'encontrar',
+    type: 'irregular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['found', 'fand', 'founded', 'finded'],
+    correctAnswer: 0,
+  },
+  {
+    id: 81,
+    infinitive: 'find',
+    translation: 'encontrar',
+    type: 'irregular',
+    form: 'past-participle',
+    difficulty: 'medium',
+    options: ['founden', 'found', 'founded', 'finded'],
+    correctAnswer: 1,
+  },
+  {
+    id: 82,
+    infinitive: 'get',
+    translation: 'obtener',
+    type: 'irregular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['got', 'gotten', 'getted', 'goted'],
+    correctAnswer: 0,
+  },
+  {
+    id: 83,
+    infinitive: 'get',
+    translation: 'obtener',
+    type: 'irregular',
+    form: 'past-participle',
+    difficulty: 'medium',
+    options: ['got', 'getted', 'gotten', 'goted'],
+    correctAnswer: 2,
+  },
+  {
+    id: 84,
+    infinitive: 'hold',
+    translation: 'sostener',
+    type: 'irregular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['helded', 'held', 'holden', 'holded'],
+    correctAnswer: 1,
+  },
+  {
+    id: 85,
+    infinitive: 'hold',
+    translation: 'sostener',
+    type: 'irregular',
+    form: 'past-participle',
+    difficulty: 'medium',
+    options: ['helden', 'held', 'holded', 'holden'],
+    correctAnswer: 1,
+  },
+  {
+    id: 86,
+    infinitive: 'keep',
+    translation: 'mantener / guardar',
+    type: 'irregular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['kepped', 'keeped', 'kept', 'kepted'],
+    correctAnswer: 2,
+  },
+  {
+    id: 87,
+    infinitive: 'keep',
+    translation: 'mantener / guardar',
+    type: 'irregular',
+    form: 'past-participle',
+    difficulty: 'medium',
+    options: ['kepten', 'kepped', 'kept', 'keeped'],
+    correctAnswer: 2,
+  },
+  {
+    id: 88,
+    infinitive: 'lead',
+    translation: 'liderar',
+    type: 'irregular',
+    form: 'past-simple',
+    difficulty: 'medium',
+    options: ['leaded', 'lead', 'led', 'leadad'],
+    correctAnswer: 2,
+  },
+  {
+    id: 89,
+    infinitive: 'lead',
+    translation: 'liderar',
+    type: 'irregular',
+    form: 'past-participle',
+    difficulty: 'hard',
+    options: ['lead', 'leaden', 'leaded', 'led'],
+    correctAnswer: 3,
+  },
+  {
+    id: 90,
+    infinitive: 'leave',
+    translation: 'dejar / salir',
+    type: 'irregular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['lefed', 'left', 'leaved', 'leavened'],
+    correctAnswer: 1,
+  },
+  {
+    id: 91,
+    infinitive: 'leave',
+    translation: 'dejar / salir',
+    type: 'irregular',
+    form: 'past-participle',
+    difficulty: 'medium',
+    options: ['left', 'leften', 'leaved', 'leavened'],
+    correctAnswer: 0,
+  },
+  {
+    id: 92,
+    infinitive: 'lend',
+    translation: 'prestar',
+    type: 'irregular',
+    form: 'past-simple',
+    difficulty: 'medium',
+    options: ['lend', 'lended', 'lent', 'lented'],
+    correctAnswer: 2,
+  },
+  {
+    id: 93,
+    infinitive: 'lend',
+    translation: 'prestar',
+    type: 'irregular',
+    form: 'past-participle',
+    difficulty: 'hard',
+    options: ['lent', 'lenten', 'lended', 'lentened'],
+    correctAnswer: 0,
+  },
+  {
+    id: 94,
+    infinitive: 'lose',
+    translation: 'perder',
+    type: 'irregular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['loosed', 'losted', 'losed', 'lost'],
+    correctAnswer: 3,
+  },
+  {
+    id: 95,
+    infinitive: 'lose',
+    translation: 'perder',
+    type: 'irregular',
+    form: 'past-participle',
+    difficulty: 'medium',
+    options: ['loosed', 'losed', 'losten', 'lost'],
+    correctAnswer: 3,
+  },
+  {
+    id: 96,
+    infinitive: 'make',
+    translation: 'hacer / fabricar',
+    type: 'irregular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['maked', 'maid', 'made', 'mad'],
+    correctAnswer: 2,
+  },
+  {
+    id: 97,
+    infinitive: 'make',
+    translation: 'hacer / fabricar',
+    type: 'irregular',
+    form: 'past-participle',
+    difficulty: 'easy',
+    options: ['made', 'maden', 'maid', 'maked'],
+    correctAnswer: 0,
+  },
+  {
+    id: 98,
+    infinitive: 'mean',
+    translation: 'significar',
+    type: 'irregular',
+    form: 'past-simple',
+    difficulty: 'medium',
+    options: ['meaned', 'ment', 'meanted', 'meant'],
+    correctAnswer: 3,
+  },
+  {
+    id: 99,
+    infinitive: 'mean',
+    translation: 'significar',
+    type: 'irregular',
+    form: 'past-participle',
+    difficulty: 'hard',
+    options: ['meanten', 'meaned', 'ment', 'meant'],
+    correctAnswer: 3,
+  },
+  {
+    id: 100,
+    infinitive: 'meet',
+    translation: 'conocer / encontrarse',
+    type: 'irregular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['meted', 'met', 'meeted', 'meet'],
+    correctAnswer: 1,
+  },
+  {
+    id: 101,
+    infinitive: 'meet',
+    translation: 'conocer / encontrarse',
+    type: 'irregular',
+    form: 'past-participle',
+    difficulty: 'medium',
+    options: ['meten', 'meted', 'met', 'meeted'],
+    correctAnswer: 2,
+  },
+  {
+    id: 102,
+    infinitive: 'pay',
+    translation: 'pagar',
+    type: 'irregular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['payed', 'poid', 'payd', 'paid'],
+    correctAnswer: 3,
+  },
+  {
+    id: 103,
+    infinitive: 'pay',
+    translation: 'pagar',
+    type: 'irregular',
+    form: 'past-participle',
+    difficulty: 'medium',
+    options: ['paid', 'payeden', 'payed', 'paiden'],
+    correctAnswer: 0,
+  },
+  {
+    id: 104,
+    infinitive: 'read',
+    translation: 'leer',
+    type: 'irregular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['readed', 'read', 'red', 'reed'],
+    correctAnswer: 1,
+  },
+  {
+    id: 105,
+    infinitive: 'read',
+    translation: 'leer',
+    type: 'irregular',
+    form: 'past-participle',
+    difficulty: 'medium',
+    options: ['readen', 'red', 'readed', 'read'],
+    correctAnswer: 3,
+  },
+  {
+    id: 106,
+    infinitive: 'say',
+    translation: 'decir',
+    type: 'irregular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['said', 'sayd', 'sayed', 'sed'],
+    correctAnswer: 0,
+  },
+  {
+    id: 107,
+    infinitive: 'say',
+    translation: 'decir',
+    type: 'irregular',
+    form: 'past-participle',
+    difficulty: 'medium',
+    options: ['sayed', 'said', 'sed', 'sayden'],
+    correctAnswer: 1,
+  },
+  {
+    id: 108,
+    infinitive: 'sell',
+    translation: 'vender',
+    type: 'irregular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['sold', 'selled', 'seld', 'solded'],
+    correctAnswer: 0,
+  },
+  {
+    id: 109,
+    infinitive: 'sell',
+    translation: 'vender',
+    type: 'irregular',
+    form: 'past-participle',
+    difficulty: 'medium',
+    options: ['solden', 'selled', 'sold', 'seld'],
+    correctAnswer: 2,
+  },
+  {
+    id: 110,
+    infinitive: 'send',
+    translation: 'enviar',
+    type: 'irregular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['sended', 'sented', 'sent', 'send'],
+    correctAnswer: 2,
+  },
+  {
+    id: 111,
+    infinitive: 'send',
+    translation: 'enviar',
+    type: 'irregular',
+    form: 'past-participle',
+    difficulty: 'medium',
+    options: ['sented', 'sent', 'sended', 'senten'],
+    correctAnswer: 1,
+  },
+  {
+    id: 112,
+    infinitive: 'sit',
+    translation: 'sentarse',
+    type: 'irregular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['sitted', 'set', 'sat', 'sited'],
+    correctAnswer: 2,
+  },
+  {
+    id: 113,
+    infinitive: 'sit',
+    translation: 'sentarse',
+    type: 'irregular',
+    form: 'past-participle',
+    difficulty: 'medium',
+    options: ['sitten', 'sitted', 'set', 'sat'],
+    correctAnswer: 3,
+  },
+  {
+    id: 114,
+    infinitive: 'sleep',
+    translation: 'dormir',
+    type: 'irregular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['sleeped', 'slepped', 'sleped', 'slept'],
+    correctAnswer: 3,
+  },
+  {
+    id: 115,
+    infinitive: 'sleep',
+    translation: 'dormir',
+    type: 'irregular',
+    form: 'past-participle',
+    difficulty: 'medium',
+    options: ['sleeped', 'slept', 'sleped', 'slepten'],
+    correctAnswer: 1,
+  },
+  {
+    id: 116,
+    infinitive: 'spend',
+    translation: 'gastar',
+    type: 'irregular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['spented', 'spent', 'spend', 'spended'],
+    correctAnswer: 1,
+  },
+  {
+    id: 117,
+    infinitive: 'spend',
+    translation: 'gastar',
+    type: 'irregular',
+    form: 'past-participle',
+    difficulty: 'medium',
+    options: ['spenten', 'spented', 'spended', 'spent'],
+    correctAnswer: 3,
+  },
+  {
+    id: 118,
+    infinitive: 'stand',
+    translation: 'estar de pie',
+    type: 'irregular',
+    form: 'past-simple',
+    difficulty: 'medium',
+    options: ['stolded', 'standed', 'stood', 'stond'],
+    correctAnswer: 2,
+  },
+  {
+    id: 119,
+    infinitive: 'stand',
+    translation: 'estar de pie',
+    type: 'irregular',
+    form: 'past-participle',
+    difficulty: 'hard',
+    options: ['stood', 'stonden', 'standed', 'stooden'],
+    correctAnswer: 0,
+  },
+  {
+    id: 120,
+    infinitive: 'tell',
+    translation: 'decir / contar',
+    type: 'irregular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['told', 'tolded', 'telled', 'teld'],
+    correctAnswer: 0,
+  },
+  {
+    id: 121,
+    infinitive: 'tell',
+    translation: 'decir / contar',
+    type: 'irregular',
+    form: 'past-participle',
+    difficulty: 'medium',
+    options: ['tolden', 'telled', 'told', 'tolded'],
+    correctAnswer: 2,
+  },
+  {
+    id: 122,
+    infinitive: 'understand',
+    translation: 'entender',
+    type: 'irregular',
+    form: 'past-simple',
+    difficulty: 'medium',
+    options: ['understooded', 'understanded', 'understood', 'understond'],
+    correctAnswer: 2,
+  },
+  {
+    id: 123,
+    infinitive: 'understand',
+    translation: 'entender',
+    type: 'irregular',
+    form: 'past-participle',
+    difficulty: 'hard',
+    options: ['understanded', 'understonden', 'understood', 'understooden'],
+    correctAnswer: 2,
+  },
+  {
+    id: 124,
+    infinitive: 'build',
+    translation: 'construir',
+    type: 'irregular',
+    form: 'past-simple',
+    difficulty: 'medium',
+    options: ['builded', 'bild', 'built', 'builted'],
+    correctAnswer: 2,
+  },
+  {
+    id: 125,
+    infinitive: 'build',
+    translation: 'construir',
+    type: 'irregular',
+    form: 'past-participle',
+    difficulty: 'hard',
+    options: ['builden', 'built', 'builded', 'builted'],
+    correctAnswer: 1,
+  },
+  {
+    id: 126,
+    infinitive: 'feel',
+    translation: 'sentir',
+    type: 'irregular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['feelled', 'felted', 'feeld', 'felt'],
+    correctAnswer: 3,
+  },
+  {
+    id: 127,
+    infinitive: 'feel',
+    translation: 'sentir',
+    type: 'irregular',
+    form: 'past-participle',
+    difficulty: 'medium',
+    options: ['feelled', 'felted', 'felten', 'felt'],
+    correctAnswer: 3,
+  },
+  {
+    id: 128,
+    infinitive: 'hear',
+    translation: 'oir',
+    type: 'irregular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['heared', 'heerd', 'herd', 'heard'],
+    correctAnswer: 3,
+  },
+  {
+    id: 129,
+    infinitive: 'hear',
+    translation: 'oir',
+    type: 'irregular',
+    form: 'past-participle',
+    difficulty: 'medium',
+    options: ['hearden', 'heared', 'hearded', 'heard'],
+    correctAnswer: 3,
+  },
+  {
+    id: 130,
+    infinitive: 'lay',
+    translation: 'poner / colocar',
+    type: 'irregular',
+    form: 'past-simple',
+    difficulty: 'hard',
+    options: ['loyed', 'laid', 'layed', 'layd'],
+    correctAnswer: 1,
+  },
+  {
+    id: 131,
+    infinitive: 'lay',
+    translation: 'poner / colocar',
+    type: 'irregular',
+    form: 'past-participle',
+    difficulty: 'hard',
+    options: ['laiden', 'layen', 'laid', 'layed'],
+    correctAnswer: 2,
+  },
+  {
+    id: 132,
+    infinitive: 'lie',
+    translation: 'acostarse / echarse',
+    type: 'irregular',
+    form: 'past-simple',
+    difficulty: 'hard',
+    options: ['lay', 'loyed', 'lied', 'lain'],
+    correctAnswer: 0,
+  },
+  {
+    id: 133,
+    infinitive: 'lie',
+    translation: 'acostarse / echarse',
+    type: 'irregular',
+    form: 'past-participle',
+    difficulty: 'hard',
+    options: ['lied', 'lay', 'lain', 'lained'],
+    correctAnswer: 2,
+  },
+  {
+    id: 134,
+    infinitive: 'put',
+    translation: 'poner',
+    type: 'irregular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['puting', 'puted', 'put', 'putted'],
+    correctAnswer: 2,
+  },
+  {
+    id: 135,
+    infinitive: 'put',
+    translation: 'poner',
+    type: 'irregular',
+    form: 'past-participle',
+    difficulty: 'medium',
+    options: ['puted', 'put', 'puten', 'putted'],
+    correctAnswer: 1,
+  },
+  {
+    id: 136,
+    infinitive: 'cut',
+    translation: 'cortar',
+    type: 'irregular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['cuted', 'cuting', 'cutted', 'cut'],
+    correctAnswer: 3,
+  },
+  {
+    id: 137,
+    infinitive: 'cut',
+    translation: 'cortar',
+    type: 'irregular',
+    form: 'past-participle',
+    difficulty: 'medium',
+    options: ['cuted', 'cuten', 'cut', 'cutted'],
+    correctAnswer: 2,
+  },
+  {
+    id: 138,
+    infinitive: 'hit',
+    translation: 'golpear',
+    type: 'irregular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['hited', 'hiten', 'hitted', 'hit'],
+    correctAnswer: 3,
+  },
+  {
+    id: 139,
+    infinitive: 'hit',
+    translation: 'golpear',
+    type: 'irregular',
+    form: 'past-participle',
+    difficulty: 'medium',
+    options: ['hiten', 'hitted', 'hit', 'hited'],
+    correctAnswer: 2,
+  },
+  {
+    id: 140,
+    infinitive: 'hurt',
+    translation: 'lastimar / doler',
+    type: 'irregular',
+    form: 'past-simple',
+    difficulty: 'medium',
+    options: ['hurted', 'hert', 'hurt', 'hurten'],
+    correctAnswer: 2,
+  },
+  {
+    id: 141,
+    infinitive: 'hurt',
+    translation: 'lastimar / doler',
+    type: 'irregular',
+    form: 'past-participle',
+    difficulty: 'hard',
+    options: ['hurtened', 'hurten', 'hurted', 'hurt'],
+    correctAnswer: 3,
+  },
+  {
+    id: 142,
+    infinitive: 'let',
+    translation: 'dejar / permitir',
+    type: 'irregular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['letten', 'let', 'letted', 'leted'],
+    correctAnswer: 1,
+  },
+  {
+    id: 143,
+    infinitive: 'let',
+    translation: 'dejar / permitir',
+    type: 'irregular',
+    form: 'past-participle',
+    difficulty: 'medium',
+    options: ['leten', 'leted', 'letted', 'let'],
+    correctAnswer: 3,
+  },
+  {
+    id: 144,
+    infinitive: 'cost',
+    translation: 'costar',
+    type: 'irregular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['costs', 'cost', 'costered', 'costed'],
+    correctAnswer: 1,
+  },
+  {
+    id: 145,
+    infinitive: 'cost',
+    translation: 'costar',
+    type: 'irregular',
+    form: 'past-participle',
+    difficulty: 'medium',
+    options: ['costed', 'cost', 'costen', 'costered'],
+    correctAnswer: 1,
+  },
+  {
+    id: 146,
+    infinitive: 'set',
+    translation: 'establecer / colocar',
+    type: 'irregular',
+    form: 'past-simple',
+    difficulty: 'medium',
+    options: ['setted', 'sitted', 'set', 'seted'],
+    correctAnswer: 2,
+  },
+  {
+    id: 147,
+    infinitive: 'set',
+    translation: 'establecer / colocar',
+    type: 'irregular',
+    form: 'past-participle',
+    difficulty: 'hard',
+    options: ['setted', 'sitted', 'set', 'seten'],
+    correctAnswer: 2,
+  },
+  {
+    id: 148,
+    infinitive: 'win',
+    translation: 'ganar',
+    type: 'irregular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['won', 'winned', 'wan', 'win'],
+    correctAnswer: 0,
+  },
+  {
+    id: 149,
+    infinitive: 'win',
+    translation: 'ganar',
+    type: 'irregular',
+    form: 'past-participle',
+    difficulty: 'medium',
+    options: ['won', 'wonned', 'win', 'winned'],
+    correctAnswer: 0,
+  },
+  {
+    id: 150,
+    infinitive: 'walk',
+    translation: 'caminar',
+    type: 'regular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['walken', 'walk', 'walked', 'walkt'],
+    correctAnswer: 2,
+  },
+  {
+    id: 151,
+    infinitive: 'talk',
+    translation: 'hablar / conversar',
+    type: 'regular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['talken', 'talk', 'talkt', 'talked'],
+    correctAnswer: 3,
+  },
+  {
+    id: 152,
+    infinitive: 'work',
+    translation: 'trabajar',
+    type: 'regular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['worken', 'worked', 'workt', 'work'],
+    correctAnswer: 1,
+  },
+  {
+    id: 153,
+    infinitive: 'play',
+    translation: 'jugar',
+    type: 'regular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['plaid', 'playen', 'playd', 'played'],
+    correctAnswer: 3,
+  },
+  {
+    id: 154,
+    infinitive: 'help',
+    translation: 'ayudar',
+    type: 'regular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['helped', 'holp', 'helpt', 'help'],
+    correctAnswer: 0,
+  },
+  {
+    id: 155,
+    infinitive: 'need',
+    translation: 'necesitar',
+    type: 'regular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['neededed', 'needed', 'need', 'needen'],
+    correctAnswer: 1,
+  },
+  {
+    id: 156,
+    infinitive: 'want',
+    translation: 'querer',
+    type: 'regular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['wanten', 'wanted', 'want', 'wantt'],
+    correctAnswer: 1,
+  },
+  {
+    id: 157,
+    infinitive: 'call',
+    translation: 'llamar',
+    type: 'regular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['called', 'callen', 'calld', 'callt'],
+    correctAnswer: 0,
+  },
+  {
+    id: 158,
+    infinitive: 'ask',
+    translation: 'preguntar',
+    type: 'regular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['ask', 'asken', 'askt', 'asked'],
+    correctAnswer: 3,
+  },
+  {
+    id: 159,
+    infinitive: 'answer',
+    translation: 'responder',
+    type: 'regular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['answer', 'answeren', 'answerd', 'answered'],
+    correctAnswer: 3,
+  },
+  {
+    id: 160,
+    infinitive: 'believe',
+    translation: 'creer',
+    type: 'regular',
+    form: 'past-simple',
+    difficulty: 'medium',
+    options: ['believde', 'believeed', 'believed', 'believe'],
+    correctAnswer: 2,
+  },
+  {
+    id: 161,
+    infinitive: 'change',
+    translation: 'cambiar',
+    type: 'regular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['changen', 'changeed', 'changed', 'changd'],
+    correctAnswer: 2,
+  },
+  {
+    id: 162,
+    infinitive: 'clean',
+    translation: 'limpiar',
+    type: 'regular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['cleant', 'cleanen', 'clean', 'cleaned'],
+    correctAnswer: 3,
+  },
+  {
+    id: 163,
+    infinitive: 'close',
+    translation: 'cerrar',
+    type: 'regular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['closeed', 'closed', 'closd', 'closen'],
+    correctAnswer: 1,
+  },
+  {
+    id: 164,
+    infinitive: 'cook',
+    translation: 'cocinar',
+    type: 'regular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['cooked', 'cooken', 'cookt', 'cook'],
+    correctAnswer: 0,
+  },
+  {
+    id: 165,
+    infinitive: 'dance',
+    translation: ' bailar',
+    type: 'regular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['danceed', 'dancd', 'danced', 'dancen'],
+    correctAnswer: 2,
+  },
+  {
+    id: 166,
+    infinitive: 'decide',
+    translation: 'decidir',
+    type: 'regular',
+    form: 'past-simple',
+    difficulty: 'medium',
+    options: ['deciden', 'decid', 'decideed', 'decided'],
+    correctAnswer: 3,
+  },
+  {
+    id: 167,
+    infinitive: 'enjoy',
+    translation: 'disfrutar',
+    type: 'regular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['enjoyen', 'enjoyd', 'enjoy', 'enjoyed'],
+    correctAnswer: 3,
+  },
+  {
+    id: 168,
+    infinitive: 'explain',
+    translation: 'explicar',
+    type: 'regular',
+    form: 'past-simple',
+    difficulty: 'medium',
+    options: ['explainen', 'explaind', 'explained', 'explain'],
+    correctAnswer: 2,
+  },
+  {
+    id: 169,
+    infinitive: 'finish',
+    translation: 'terminar',
+    type: 'regular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['finished', 'finish', 'finishen', 'finisht'],
+    correctAnswer: 0,
+  },
+  {
+    id: 170,
+    infinitive: 'follow',
+    translation: 'seguir',
+    type: 'regular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['followd', 'followen', 'followed', 'follow'],
+    correctAnswer: 2,
+  },
+  {
+    id: 171,
+    infinitive: 'happen',
+    translation: 'suceder / ocurrir',
+    type: 'regular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['happend', 'happened', 'happed', 'happen'],
+    correctAnswer: 1,
+  },
+  {
+    id: 172,
+    infinitive: 'listen',
+    translation: 'escuchar',
+    type: 'regular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['listenen', 'listend', 'listen', 'listened'],
+    correctAnswer: 3,
+  },
+  {
+    id: 173,
+    infinitive: 'live',
+    translation: 'vivir',
+    type: 'regular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['liven', 'lived', 'livd', 'liveed'],
+    correctAnswer: 1,
+  },
+  {
+    id: 174,
+    infinitive: 'love',
+    translation: 'amar',
+    type: 'regular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['loven', 'loved', 'loveed', 'lovd'],
+    correctAnswer: 1,
+  },
+  {
+    id: 175,
+    infinitive: 'move',
+    translation: 'mover',
+    type: 'regular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['moven', 'movd', 'moveed', 'moved'],
+    correctAnswer: 3,
+  },
+  {
+    id: 176,
+    infinitive: 'open',
+    translation: 'abrir',
+    type: 'regular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['openen', 'opend', 'open', 'opened'],
+    correctAnswer: 3,
+  },
+  {
+    id: 177,
+    infinitive: 'pick',
+    translation: 'recoger / escoger',
+    type: 'regular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['pickt', 'picked', 'pick', 'picken'],
+    correctAnswer: 1,
+  },
+  {
+    id: 178,
+    infinitive: 'plan',
+    translation: 'planificar',
+    type: 'regular',
+    form: 'past-simple',
+    difficulty: 'medium',
+    options: ['planed', 'pland', 'planned', 'plan'],
+    correctAnswer: 2,
+  },
+  {
+    id: 179,
+    infinitive: 'rain',
+    translation: 'llover',
+    type: 'regular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['rained', 'rain', 'rainen', 'raind'],
+    correctAnswer: 0,
+  },
+  {
+    id: 180,
+    infinitive: 'remember',
+    translation: 'recordar',
+    type: 'regular',
+    form: 'past-simple',
+    difficulty: 'medium',
+    options: ['remembred', 'rememberen', 'remembered', 'rememberd'],
+    correctAnswer: 2,
+  },
+  {
+    id: 181,
+    infinitive: 'start',
+    translation: 'empezar / comenzar',
+    type: 'regular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['started', 'startd', 'starten', 'start'],
+    correctAnswer: 0,
+  },
+  {
+    id: 182,
+    infinitive: 'stop',
+    translation: 'parar / detener',
+    type: 'regular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['stopped', 'stoped', 'stopd', 'stop'],
+    correctAnswer: 0,
+  },
+  {
+    id: 183,
+    infinitive: 'study',
+    translation: 'estudiar',
+    type: 'regular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['studien', 'studyed', 'studied', 'studyd'],
+    correctAnswer: 2,
+  },
+  {
+    id: 184,
+    infinitive: 'travel',
+    translation: 'viajar',
+    type: 'regular',
+    form: 'past-simple',
+    difficulty: 'medium',
+    options: ['traveld', 'travelled', 'traveled', 'travelen'],
+    correctAnswer: 1,
+  },
+  {
+    id: 185,
+    infinitive: 'try',
+    translation: 'intentar',
+    type: 'regular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['tryd', 'tryen', 'tryed', 'tried'],
+    correctAnswer: 3,
+  },
+  {
+    id: 186,
+    infinitive: 'turn',
+    translation: 'girar / voltear',
+    type: 'regular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['turnd', 'turn', 'turnen', 'turned'],
+    correctAnswer: 3,
+  },
+  {
+    id: 187,
+    infinitive: 'use',
+    translation: 'usar / utilizar',
+    type: 'regular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['used', 'usen', 'useded', 'useed'],
+    correctAnswer: 0,
+  },
+  {
+    id: 188,
+    infinitive: 'visit',
+    translation: 'visitar',
+    type: 'regular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['visiten', 'visit', 'visited', 'visitd'],
+    correctAnswer: 2,
+  },
+  {
+    id: 189,
+    infinitive: 'wait',
+    translation: 'esperar',
+    type: 'regular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['waitd', 'wait', 'waiten', 'waited'],
+    correctAnswer: 3,
+  },
+  {
+    id: 190,
+    infinitive: 'watch',
+    translation: 'mirar / ver',
+    type: 'regular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['watchen', 'watched', 'watcht', 'watch'],
+    correctAnswer: 1,
+  },
+  {
+    id: 191,
+    infinitive: 'worry',
+    translation: 'preocuparse',
+    type: 'regular',
+    form: 'past-simple',
+    difficulty: 'medium',
+    options: ['worried', 'worryd', 'worrien', 'worryed'],
+    correctAnswer: 0,
+  },
+  {
+    id: 192,
+    infinitive: 'learn',
+    translation: 'aprender',
+    type: 'regular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['learned', 'learnd', 'learnt', 'learnen'],
+    correctAnswer: 0,
+  },
+  {
+    id: 193,
+    infinitive: 'learn',
+    translation: 'aprender',
+    type: 'regular',
+    form: 'past-participle',
+    difficulty: 'medium',
+    options: ['learned', 'learnt', 'learnen', 'learneded'],
+    correctAnswer: 0,
+  },
+  {
+    id: 194,
+    infinitive: 'offer',
+    translation: 'ofrecer',
+    type: 'regular',
+    form: 'past-simple',
+    difficulty: 'medium',
+    options: ['offered', 'offerd', 'offerred', 'offer'],
+    correctAnswer: 0,
+  },
+  {
+    id: 195,
+    infinitive: 'carry',
+    translation: 'llevar / cargar',
+    type: 'regular',
+    form: 'past-simple',
+    difficulty: 'medium',
+    options: ['carryed', 'carrid', 'carried', 'carryd'],
+    correctAnswer: 2,
+  },
+  {
+    id: 196,
+    infinitive: 'enjoy',
+    translation: 'disfrutar',
+    type: 'regular',
+    form: 'past-participle',
+    difficulty: 'medium',
+    options: ['enjoyeded', 'enjoyen', 'enjoyed', 'enjoyd'],
+    correctAnswer: 2,
+  },
+  {
+    id: 197,
+    infinitive: 'fix',
+    translation: 'arreglar / reparar',
+    type: 'regular',
+    form: 'past-simple',
+    difficulty: 'medium',
+    options: ['fix', 'fixt', 'fixen', 'fixed'],
+    correctAnswer: 3,
+  },
+  {
+    id: 198,
+    infinitive: 'hate',
+    translation: 'odiar',
+    type: 'regular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['hated', 'hateed', 'haten', 'hatd'],
+    correctAnswer: 0,
+  },
+  {
+    id: 199,
+    infinitive: 'jump',
+    translation: 'saltar',
+    type: 'regular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['jumpt', 'jumped', 'jumpen', 'jump'],
+    correctAnswer: 1,
+  },
+  {
+    id: 200,
+    infinitive: 'kick',
+    translation: 'patear',
+    type: 'regular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['kicked', 'kick', 'kickt', 'kicken'],
+    correctAnswer: 0,
+  },
+  {
+    id: 201,
+    infinitive: 'kill',
+    translation: 'matar',
+    type: 'regular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['kill', 'killed', 'killt', 'killen'],
+    correctAnswer: 1,
+  },
+  {
+    id: 202,
+    infinitive: 'kiss',
+    translation: 'besar',
+    type: 'regular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['kissed', 'kiss', 'kisst', 'kissen'],
+    correctAnswer: 0,
+  },
+  {
+    id: 203,
+    infinitive: 'laugh',
+    translation: 'reir',
+    type: 'regular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['laugh', 'laught', 'laughed', 'laughen'],
+    correctAnswer: 2,
+  },
+  {
+    id: 204,
+    infinitive: 'like',
+    translation: 'gustar',
+    type: 'regular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['liked', 'liken', 'likd', 'likeed'],
+    correctAnswer: 0,
+  },
+  {
+    id: 205,
+    infinitive: 'marry',
+    translation: 'casar',
+    type: 'regular',
+    form: 'past-simple',
+    difficulty: 'medium',
+    options: ['married', 'marrid', 'marryed', 'maryd'],
+    correctAnswer: 0,
+  },
+  {
+    id: 206,
+    infinitive: 'smile',
+    translation: 'sonreir',
+    type: 'regular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['smilen', 'smiled', 'smild', 'smileed'],
+    correctAnswer: 1,
+  },
+  {
+    id: 207,
+    infinitive: 'type',
+    translation: 'escribir a maquina',
+    type: 'regular',
+    form: 'past-simple',
+    difficulty: 'medium',
+    options: ['typd', 'typeed', 'typed', 'typt'],
+    correctAnswer: 2,
+  },
+  {
+    id: 208,
+    infinitive: 'cry',
+    translation: 'llorar',
+    type: 'regular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['cried', 'cryd', 'cryen', 'cryed'],
+    correctAnswer: 0,
+  },
+  {
+    id: 209,
+    infinitive: 'save',
+    translation: 'ahorrar / salvar',
+    type: 'regular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['savd', 'saved', 'saven', 'saveed'],
+    correctAnswer: 1,
+  },
+  {
+    id: 210,
+    infinitive: 'borrow',
+    translation: 'pedir prestado',
+    type: 'regular',
+    form: 'past-simple',
+    difficulty: 'medium',
+    options: ['borrowed', 'borrowd', 'borrow', 'borrowen'],
+    correctAnswer: 0,
+  },
+  {
+    id: 211,
+    infinitive: 'count',
+    translation: 'contar',
+    type: 'regular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['countd', 'count', 'counted', 'counten'],
+    correctAnswer: 2,
+  },
+  {
+    id: 212,
+    infinitive: 'dream',
+    translation: 'sonar',
+    type: 'irregular',
+    form: 'past-simple',
+    difficulty: 'medium',
+    options: ['dreamed', 'dreamten', 'dreamen', 'dreamt'],
+    correctAnswer: 3,
+  },
+  {
+    id: 213,
+    infinitive: 'dream',
+    translation: 'sonar',
+    type: 'irregular',
+    form: 'past-participle',
+    difficulty: 'hard',
+    options: ['dreamed', 'dreamen', 'dreamten', 'dreamt'],
+    correctAnswer: 3,
+  },
+  {
+    id: 214,
+    infinitive: 'burn',
+    translation: 'quemar',
+    type: 'irregular',
+    form: 'past-simple',
+    difficulty: 'medium',
+    options: ['burnt', 'burnten', 'burned', 'burnen'],
+    correctAnswer: 0,
+  },
+  {
+    id: 215,
+    infinitive: 'burn',
+    translation: 'quemar',
+    type: 'irregular',
+    form: 'past-participle',
+    difficulty: 'hard',
+    options: ['burnt', 'burnen', 'burneded', 'burned'],
+    correctAnswer: 0,
+  },
+  {
+    id: 216,
+    infinitive: 'light',
+    translation: 'encender / iluminar',
+    type: 'irregular',
+    form: 'past-simple',
+    difficulty: 'hard',
+    options: ['lighten', 'litted', 'lit', 'lighted'],
+    correctAnswer: 2,
+  },
+  {
+    id: 217,
+    infinitive: 'light',
+    translation: 'encender / iluminar',
+    type: 'irregular',
+    form: 'past-participle',
+    difficulty: 'hard',
+    options: ['lighted', 'lighten', 'litten', 'lit'],
+    correctAnswer: 3,
+  },
+  {
+    id: 218,
+    infinitive: 'quit',
+    translation: 'renunciar / dejar',
+    type: 'irregular',
+    form: 'past-simple',
+    difficulty: 'medium',
+    options: ['quited', 'quit', 'quitted', 'quiten'],
+    correctAnswer: 1,
+  },
+  {
+    id: 219,
+    infinitive: 'quit',
+    translation: 'renunciar / dejar',
+    type: 'irregular',
+    form: 'past-participle',
+    difficulty: 'hard',
+    options: ['quitten', 'quitted', 'quiten', 'quit'],
+    correctAnswer: 3,
+  },
+  {
+    id: 220,
+    infinitive: 'shut',
+    translation: 'cerrar',
+    type: 'irregular',
+    form: 'past-simple',
+    difficulty: 'medium',
+    options: ['shut', 'shuten', 'shuted', 'shutted'],
+    correctAnswer: 0,
+  },
+  {
+    id: 221,
+    infinitive: 'shut',
+    translation: 'cerrar',
+    type: 'irregular',
+    form: 'past-participle',
+    difficulty: 'hard',
+    options: ['shut', 'shutten', 'shuten', 'shutted'],
+    correctAnswer: 0,
+  },
+  {
+    id: 222,
+    infinitive: 'spread',
+    translation: 'extender / difundir',
+    type: 'irregular',
+    form: 'past-simple',
+    difficulty: 'hard',
+    options: ['spreaded', 'spread', 'spred', 'spreden'],
+    correctAnswer: 1,
+  },
+  {
+    id: 223,
+    infinitive: 'spread',
+    translation: 'extender / difundir',
+    type: 'irregular',
+    form: 'past-participle',
+    difficulty: 'hard',
+    options: ['spreaded', 'spreden', 'spredden', 'spread'],
+    correctAnswer: 3,
+  },
+  {
+    id: 224,
+    infinitive: 'bet',
+    translation: 'apostar',
+    type: 'irregular',
+    form: 'past-simple',
+    difficulty: 'hard',
+    options: ['betted', 'bited', 'beten', 'bet'],
+    correctAnswer: 3,
+  },
+  {
+    id: 225,
+    infinitive: 'bet',
+    translation: 'apostar',
+    type: 'irregular',
+    form: 'past-participle',
+    difficulty: 'hard',
+    options: ['betten', 'betted', 'beten', 'bet'],
+    correctAnswer: 3,
+  },
+  {
+    id: 226,
+    infinitive: 'offer',
+    translation: 'ofrecer',
+    type: 'regular',
+    form: 'past-participle',
+    difficulty: 'medium',
+    options: ['offerd', 'offered', 'offerred', 'offeren'],
+    correctAnswer: 1,
+  },
+  {
+    id: 227,
+    infinitive: 'shave',
+    translation: 'afeitar',
+    type: 'irregular',
+    form: 'past-participle',
+    difficulty: 'hard',
+    options: ['shavened', 'shaveed', 'shaven', 'shaved'],
+    correctAnswer: 2,
+  },
+  {
+    id: 228,
+    infinitive: 'show',
+    translation: 'mostrar',
+    type: 'irregular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['showeden', 'shown', 'showeded', 'showed'],
+    correctAnswer: 3,
+  },
+  {
+    id: 229,
+    infinitive: 'show',
+    translation: 'mostrar',
+    type: 'irregular',
+    form: 'past-participle',
+    difficulty: 'medium',
+    options: ['shown', 'showed', 'showeded', 'showeden'],
+    correctAnswer: 0,
+  },
+  {
+    id: 230,
+    infinitive: 'forget',
+    translation: 'olvidar',
+    type: 'irregular',
+    form: 'past-simple',
+    difficulty: 'medium',
+    options: ['forgotten', 'forgeted', 'forgot', 'forgat'],
+    correctAnswer: 2,
+  },
+  {
+    id: 231,
+    infinitive: 'forget',
+    translation: 'olvidar',
+    type: 'irregular',
+    form: 'past-participle',
+    difficulty: 'medium',
+    options: ['forgaten', 'forgot', 'forgeted', 'forgotten'],
+    correctAnswer: 3,
+  },
+  {
+    id: 232,
+    infinitive: 'fall',
+    translation: 'caer',
+    type: 'irregular',
+    form: 'past-simple',
+    difficulty: 'medium',
+    options: ['felled', 'fallen', 'fell', 'falled'],
+    correctAnswer: 2,
+  },
+  {
+    id: 233,
+    infinitive: 'fall',
+    translation: 'caer',
+    type: 'irregular',
+    form: 'past-participle',
+    difficulty: 'medium',
+    options: ['fallen', 'falled', 'fell', 'felled'],
+    correctAnswer: 0,
+  },
+  {
+    id: 234,
+    infinitive: 'feed',
+    translation: 'alimentar',
+    type: 'irregular',
+    form: 'past-simple',
+    difficulty: 'medium',
+    options: ['feeded', 'fed', 'feded', 'feed'],
+    correctAnswer: 1,
+  },
+  {
+    id: 235,
+    infinitive: 'feed',
+    translation: 'alimentar',
+    type: 'irregular',
+    form: 'past-participle',
+    difficulty: 'hard',
+    options: ['feeded', 'feden', 'fed', 'feed'],
+    correctAnswer: 2,
+  },
+  {
+    id: 236,
+    infinitive: 'swing',
+    translation: 'balancearse',
+    type: 'irregular',
+    form: 'past-simple',
+    difficulty: 'hard',
+    options: ['swinged', 'swang', 'swung', 'swingened'],
+    correctAnswer: 2,
+  },
+  {
+    id: 237,
+    infinitive: 'swing',
+    translation: 'balancearse',
+    type: 'irregular',
+    form: 'past-participle',
+    difficulty: 'hard',
+    options: ['swungen', 'swang', 'swung', 'swinged'],
+    correctAnswer: 2,
+  },
+  {
+    id: 238,
+    infinitive: 'stick',
+    translation: 'pegar / adherir',
+    type: 'irregular',
+    form: 'past-simple',
+    difficulty: 'hard',
+    options: ['sticked', 'stucken', 'stack', 'stuck'],
+    correctAnswer: 3,
+  },
+  {
+    id: 239,
+    infinitive: 'stick',
+    translation: 'pegar / adherir',
+    type: 'irregular',
+    form: 'past-participle',
+    difficulty: 'hard',
+    options: ['stucken', 'sticked', 'stuck', 'stack'],
+    correctAnswer: 2,
+  },
+  {
+    id: 240,
+    infinitive: 'strike',
+    translation: 'golpear',
+    type: 'irregular',
+    form: 'past-simple',
+    difficulty: 'hard',
+    options: ['strucken', 'striked', 'struck', 'strock'],
+    correctAnswer: 2,
+  },
+  {
+    id: 241,
+    infinitive: 'strike',
+    translation: 'golpear',
+    type: 'irregular',
+    form: 'past-participle',
+    difficulty: 'hard',
+    options: ['striked', 'struck', 'stricken', 'strucken'],
+    correctAnswer: 1,
+  },
+  {
+    id: 242,
+    infinitive: 'dig',
+    translation: 'cavar',
+    type: 'irregular',
+    form: 'past-simple',
+    difficulty: 'hard',
+    options: ['dogen', 'digged', 'dag', 'dug'],
+    correctAnswer: 3,
+  },
+  {
+    id: 243,
+    infinitive: 'dig',
+    translation: 'cavar',
+    type: 'irregular',
+    form: 'past-participle',
+    difficulty: 'hard',
+    options: ['dug', 'digged', 'dungen', 'dagen'],
+    correctAnswer: 0,
+  },
+  {
+    id: 244,
+    infinitive: 'bleed',
+    translation: 'sangrar',
+    type: 'irregular',
+    form: 'past-simple',
+    difficulty: 'hard',
+    options: ['bled', 'bleeded', 'bloden', 'bledded'],
+    correctAnswer: 0,
+  },
+  {
+    id: 245,
+    infinitive: 'bleed',
+    translation: 'sangrar',
+    type: 'irregular',
+    form: 'past-participle',
+    difficulty: 'hard',
+    options: ['bled', 'bledden', 'bleded', 'bleeded'],
+    correctAnswer: 0,
+  },
+  {
+    id: 246,
+    infinitive: 'bend',
+    translation: 'doblar / inclinar',
+    type: 'irregular',
+    form: 'past-simple',
+    difficulty: 'hard',
+    options: ['bented', 'bent', 'bended', 'bend'],
+    correctAnswer: 1,
+  },
+  {
+    id: 247,
+    infinitive: 'bend',
+    translation: 'doblar / inclinar',
+    type: 'irregular',
+    form: 'past-participle',
+    difficulty: 'hard',
+    options: ['bent', 'bented', 'benten', 'bended'],
+    correctAnswer: 0,
+  },
+  {
+    id: 248,
+    infinitive: 'climb',
+    translation: 'escalar / subir',
+    type: 'regular',
+    form: 'past-simple',
+    difficulty: 'easy',
+    options: ['clamb', 'climbt', 'climbed', 'clomb'],
+    correctAnswer: 2,
+  },
+  {
+    id: 249,
+    infinitive: 'owe',
+    translation: 'deber',
+    type: 'regular',
+    form: 'past-simple',
+    difficulty: 'medium',
+    options: ['owed', 'owd', 'oweed', 'owen'],
+    correctAnswer: 0,
+  },
+  {
+    id: 250,
+    infinitive: 'earn',
+    translation: 'ganar (dinero)',
+    type: 'regular',
+    form: 'past-simple',
+    difficulty: 'medium',
+    options: ['earnen', 'earnt', 'earnd', 'earned'],
+    correctAnswer: 3,
+  },
+];

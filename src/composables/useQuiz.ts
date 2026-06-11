@@ -1,29 +1,20 @@
 import { questions } from '@/data/questions';
+import type { QuizFilters, WrongAnswer } from '@/interfaces';
 import type { Question } from '@/interfaces/Question.interface';
 import { computed, ref } from 'vue';
 
 const shuffle = <T>(array: T[]): T[] => {
   const arr = [...array];
-  for (let i = arr.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    const temp = arr[i]!;
-    arr[i] = arr[j]!;
-    arr[j] = temp;
+
+  for (let index = arr.length - 1; index > 0; index--) {
+    const randomIndex = Math.floor(Math.random() * (index + 1));
+    const temp = arr[index]!;
+    arr[index] = arr[randomIndex]!;
+    arr[randomIndex] = temp;
   }
+
   return arr;
 };
-
-export interface QuizFilters {
-  difficulties: string[];
-  types: string[];
-  forms: string[];
-  questionCount: number;
-}
-
-export interface WrongAnswer {
-  question: Question;
-  selectedIndex: number;
-}
 
 export const useQuiz = () => {
   const shuffled = ref<Question[]>([]);
@@ -36,25 +27,28 @@ export const useQuiz = () => {
 
   const currentQuestion = computed(() => shuffled.value[currentIndex.value] ?? null);
   const total = computed(() => shuffled.value.length);
-  const progress = computed(() =>
-    total.value > 0 ? ((currentIndex.value + 1) / total.value) * 100 : 0,
-  );
+  const progress = computed(() => total.value > 0 ? ((currentIndex.value + 1) / total.value) * 100 : 0);
 
-  const startQuiz = (filters?: QuizFilters) => {
-    let filtered = questions;
+  const applyFilters = (questions: Question[], filters: QuizFilters) => {
+    let result = questions;
 
-    if (filters) {
-      if (filters.difficulties.length > 0) {
-        filtered = filtered.filter((f) => filters.difficulties.includes(f.difficulty));
-      }
-      if (filters.types.length > 0) {
-        filtered = filtered.filter((f) => filters.types.includes(f.type));
-      }
-      if (filters.forms.length > 0) {
-        filtered = filtered.filter((f) => filters.forms.includes(f.form));
-      }
+    if (filters.difficulties.length) {
+      result = result.filter(question => filters.difficulties.includes(question.difficulty));
     }
 
+    if (filters.types.length) {
+      result = result.filter(question => filters.types.includes(question.type));
+    }
+
+    if (filters.forms.length) {
+      result = result.filter(question => filters.forms.includes(question.form));
+    }
+
+    return result;
+  };
+
+  const startQuiz = (filters?: QuizFilters) => {
+    const filtered = filters ? applyFilters(questions, filters) : questions;
     const count = filters?.questionCount ?? 10;
     const picked = shuffle(filtered).slice(0, count > 0 ? count : filtered.length);
 
@@ -68,25 +62,33 @@ export const useQuiz = () => {
   };
 
   const selectAnswer = (index: number) => {
-    if (selectedAnswer.value !== null) return;
+    if (selectedAnswer.value !== null) {
+      return;
+    }
+
     selectedAnswer.value = index;
+
     if (index === currentQuestion.value!.correctAnswer) {
       score.value++;
-    } else {
-      wrongAnswers.value.push({
-        question: currentQuestion.value!,
-        selectedIndex: index,
-      });
+
+      return;
     }
+
+    wrongAnswers.value.push({
+      question: currentQuestion.value!,
+      selectedIndex: index,
+    });
   };
 
   const nextQuestion = () => {
     if (currentIndex.value < shuffled.value.length - 1) {
       currentIndex.value++;
       selectedAnswer.value = null;
-    } else {
-      isFinished.value = true;
+
+      return;
     }
+
+    isFinished.value = true;
   };
 
   return {

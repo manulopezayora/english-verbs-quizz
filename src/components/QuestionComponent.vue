@@ -21,9 +21,18 @@ const parsedQuestion = computed(
 );
 
 const classOption = (index: number) => {
-  if (props.selectedAnswer === null) return '';
-  if (index === props.question.correctAnswer) return 'correct';
-  if (index === props.selectedAnswer) return 'incorrect';
+  if (props.selectedAnswer === null) {
+    return '';
+  }
+
+  if (index === props.question.correctAnswer) {
+    return 'correct';
+  }
+
+  if (index === props.selectedAnswer) {
+    return 'incorrect';
+  }
+
   return 'dimmed';
 };
 </script>
@@ -107,5 +116,6 @@ const classOption = (index: number) => {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  text-transform: capitalize;
 }
 </style>
