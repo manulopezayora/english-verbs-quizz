@@ -101,6 +101,7 @@ export const useQuiz = () => {
     isFinished,
     isPlaying,
     wrongAnswers,
+    shuffled,
     startQuiz,
     selectAnswer,
     nextQuestion,
