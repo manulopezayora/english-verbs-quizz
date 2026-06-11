@@ -17,7 +17,7 @@ const emit = defineEmits(['select']);
 
 const parsedQuestion = computed(
   () =>
-    `Which one is the correct conjugation of the verb "${props.question.infinitive}" in ${FORMS[props.question.form]}?`,
+    `What is the correct form of the verb "${props.question.infinitive}" in the ${FORMS[props.question.form]}?`,
 );
 
 const classOption = (index: number) => {
