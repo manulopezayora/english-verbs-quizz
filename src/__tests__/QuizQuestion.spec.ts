@@ -1,7 +1,7 @@
-import { describe, it, expect } from 'vitest'
-import { mount } from '@vue/test-utils'
-import QuestionComponent from '@/components/QuestionComponent.vue'
+import QuizQuestion from '@/components/QuizQuestion.vue'
 import type { Question } from '@/interfaces'
+import { mount } from '@vue/test-utils'
+import { describe, expect, it } from 'vitest'
 
 const baseQuestion: Question = {
   id: 1,
@@ -14,9 +14,9 @@ const baseQuestion: Question = {
   correctAnswer: 1,
 }
 
-describe('QuestionComponent', () => {
+describe('QuizQuestion', () => {
   it('renders the question text', () => {
-    const wrapper = mount(QuestionComponent, {
+    const wrapper = mount(QuizQuestion, {
       props: { question: baseQuestion, selectedAnswer: null },
     })
     expect(wrapper.text()).toContain('go')
@@ -25,7 +25,7 @@ describe('QuestionComponent', () => {
   })
 
   it('renders all option buttons', () => {
-    const wrapper = mount(QuestionComponent, {
+    const wrapper = mount(QuizQuestion, {
       props: { question: baseQuestion, selectedAnswer: null },
     })
     const buttons = wrapper.findAll('.option-btn')
@@ -37,7 +37,7 @@ describe('QuestionComponent', () => {
   })
 
   it('emits select event with correct index on click', () => {
-    const wrapper = mount(QuestionComponent, {
+    const wrapper = mount(QuizQuestion, {
       props: { question: baseQuestion, selectedAnswer: null },
     })
     const buttons = wrapper.findAll('.option-btn')
@@ -48,7 +48,7 @@ describe('QuestionComponent', () => {
   })
 
   it('disables buttons after selection', () => {
-    const wrapper = mount(QuestionComponent, {
+    const wrapper = mount(QuizQuestion, {
       props: { question: baseQuestion, selectedAnswer: 1 },
     })
     const buttons = wrapper.findAll('.option-btn')
@@ -58,7 +58,7 @@ describe('QuestionComponent', () => {
   })
 
   it('applies correct class to the right answer', () => {
-    const wrapper = mount(QuestionComponent, {
+    const wrapper = mount(QuizQuestion, {
       props: { question: baseQuestion, selectedAnswer: 0 },
     })
     const buttons = wrapper.findAll('.option-btn')
@@ -66,7 +66,7 @@ describe('QuestionComponent', () => {
   })
 
   it('applies incorrect class to the selected wrong answer', () => {
-    const wrapper = mount(QuestionComponent, {
+    const wrapper = mount(QuizQuestion, {
       props: { question: baseQuestion, selectedAnswer: 0 },
     })
     const buttons = wrapper.findAll('.option-btn')
@@ -74,7 +74,7 @@ describe('QuestionComponent', () => {
   })
 
   it('applies dimmed class to non-selected wrong answers', () => {
-    const wrapper = mount(QuestionComponent, {
+    const wrapper = mount(QuizQuestion, {
       props: { question: baseQuestion, selectedAnswer: 0 },
     })
     const buttons = wrapper.findAll('.option-btn')
@@ -83,7 +83,7 @@ describe('QuestionComponent', () => {
   })
 
   it('shows difficulty and type after selection', () => {
-    const wrapper = mount(QuestionComponent, {
+    const wrapper = mount(QuizQuestion, {
       props: { question: baseQuestion, selectedAnswer: 0 },
     })
     expect(wrapper.text()).toContain('easy')
@@ -91,7 +91,7 @@ describe('QuestionComponent', () => {
   })
 
   it('does not show explanation before selection', () => {
-    const wrapper = mount(QuestionComponent, {
+    const wrapper = mount(QuizQuestion, {
       props: { question: baseQuestion, selectedAnswer: null },
     })
     expect(wrapper.find('.explanation').exists()).toBe(false)
