@@ -1,27 +1,28 @@
-# english-verbs-quizz
+# English Verbs Quiz
 
-This template should help get you started developing with Vue 3 in Vite.
+Interactive Vue 3 app to practice English verb conjugations — regular and irregular verbs, past simple and past participle forms.
 
-## Recommended IDE Setup
+## Features
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+- **250 questions** covering common regular and irregular verbs
+- **Filters** by difficulty (easy, medium, hard), verb type (regular, irregular), and form (past simple, past participle)
+- **Configurable quiz length** — 5, 10, 20, or all questions
+- **Instant feedback** — options highlight green (correct) or red (incorrect) after answering
+- **Scoring** — final score with percentage
+- **Mistake review** — shows your wrong answers alongside the correct ones
+- **Shuffled options** — answer positions are randomized in the data
 
-## Recommended Browser Setup
+## Tech Stack
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
-
-## Type Support for `.vue` Imports in TS
-
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
+| | |
+|---|---|
+| **Framework** | Vue 3 (Composition API, `<script setup>`) |
+| **Language** | TypeScript |
+| **Router** | Vue Router 5 |
+| **Build** | Vite 8 |
+| **Testing** | Vitest + @vue/test-utils |
+| **Lint** | ESLint + oxlint |
+| **Format** | Prettier |
 
 ## Project Setup
 
@@ -29,26 +30,72 @@ See [Vite Configuration Reference](https://vite.dev/config/).
 pnpm install
 ```
 
-### Compile and Hot-Reload for Development
+### Development
 
 ```sh
 pnpm dev
 ```
 
-### Type-Check, Compile and Minify for Production
+### Production Build
 
 ```sh
 pnpm build
 ```
 
-### Run Unit Tests with [Vitest](https://vitest.dev/)
+### Run Tests
 
 ```sh
 pnpm test:unit
 ```
 
-### Lint with [ESLint](https://eslint.org/)
+40 tests across 6 test files:
+
+| File | Tests |
+|---|---|
+| `useQuiz.spec.ts` | 14 |
+| `QuestionComponent.spec.ts` | 9 |
+| `FilterPanel.spec.ts` | 6 |
+| `ResultScreen.spec.ts` | 5 |
+| `QuizProgress.spec.ts` | 4 |
+| `App.spec.ts` | 2 |
+
+### Lint
 
 ```sh
 pnpm lint
+```
+
+## Project Structure
+
+```
+src/
+├── __tests__/                  Unit tests
+│   ├── App.spec.ts
+│   ├── FilterPanel.spec.ts
+│   ├── QuizProgress.spec.ts
+│   ├── QuizQuestion.spec.ts
+│   ├── ResultScreen.spec.ts
+│   └── useQuiz.spec.ts
+├── assets/
+│   └── main.css                Global styles
+├── components/                 Vue components
+│   ├── FilterPanel.vue         Quiz configuration screen
+│   ├── QuestionComponent.vue   Single question display
+│   ├── QuizProgress.vue        Progress bar and counter
+│   └── ResultScreen.vue        Results and mistake review
+├── composables/
+│   └── useQuiz.ts              Quiz state and logic
+├── data/
+│   └── questions.ts            250 verb questions
+├── interfaces/
+│   ├── index.ts                Barrel export
+│   ├── Question.interface.ts
+│   ├── QuizFilters.interface.ts
+│   └── WrongAnswer.interface.ts
+├── pages/
+│   └── HomePage.vue            Main quiz page
+├── router/
+│   └── index.ts                Vue Router config
+├── App.vue                     Root component
+└── main.ts                     App entry point
 ```
