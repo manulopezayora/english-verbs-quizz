@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import FilterPanel from '@/components/FilterPanel.vue';
-import QuestionComponent from '@/components/QuestionComponent.vue';
 import QuizProgress from '@/components/QuizProgress.vue';
+import QuizQuestion from '@/components/QuizQuestion.vue';
 import ResultScreen from '@/components/ResultScreen.vue';
 import { useQuiz } from '@/composables/useQuiz';
 import type { QuizFilters } from '@/interfaces';
@@ -48,7 +48,7 @@ const handleRestart = () => {
     <template v-else-if="isPlaying && currentQuestion">
       <QuizProgress :current="currentIndex + 1" :total="total" :progress="progress" />
 
-      <QuestionComponent
+      <QuizQuestion
         :question="currentQuestion"
         :selected-answer="selectedAnswer"
         @select="selectAnswer"
